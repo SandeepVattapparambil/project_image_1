@@ -1,0 +1,83 @@
+/* Write your custom CSS here */
+
+
+/*Custom Webkit Scrollbar*/
+
+
+/*Please refer https://css-tricks.com/custom-scrollbars-in-webkit/ */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #e0e0e0;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background: #757575;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: #e0e0e0;
+}
+
+
+/**************************************************/
+
+@media only screen and (min-width: 601px) {
+    nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+        height: 64px;
+        line-height: 60px;
+    }
+}
+
+
+/*******************************************************************************/
+
+#profile {
+    margin-top: 0px;
+    margin-left: 8px;
+}
+
+.bg-header {
+    background-image: url(../images/search_image.jpg);
+}
+
+a.pos_with_image {
+    line-height: 4;
+}
+
+
+/***************************************************/
+
+.collection .collection-item.avatar .rounded {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    overflow: hidden;
+    left: 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.rounded {
+    border-radius: 15%;
+}
+
+.collection .collection-item.avatar {
+    min-height: 0px;
+}
+
+
+/******************************************************/
