@@ -9,13 +9,19 @@ $(document).ready(function() {
             $('#img-upload-tabs').slideDown();
             $('ul.tabs').tabs('select_tab', 'test1');
         });
-    })
-})
+    });
+});
 $(document).ready(function() {
     $('#img-upload-close-1, #img-upload-close-2').click(function() {
         $('#img-upload-tabs').slideUp(function() {
             $('#img_upload_trigger').fadeIn();
         });
-    })
-})
+    });
+});
 /********************************************************/
+$(document).ready(function(){
+  $('#hide-profile-img').click(function(){
+    var image_element = $(this).parent().closest('div').children('img');
+    $(image_element).hide();
+  });
+});
