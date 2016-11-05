@@ -91,3 +91,9 @@ a.pos_with_image {
   padding-left:20px;
   padding-top: 20px;/*can be avoided*/
 }
+/*****************************************************/
+.card_image{
+  border-radius: 5%;
+  max-width: 200px;
+  max-height: 200px;
+}
