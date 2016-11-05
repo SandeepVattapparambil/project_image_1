@@ -5,7 +5,7 @@ $(document).ready(function() {
 /**********image upload form hero toggle***********/
 $(document).ready(function() {
     $('#img_upload_trigger').click(function() {
-        $('#img_upload_trigger').slideUp(function() {
+        $('#img_upload_trigger').fadeOut(function() {
             $('#img_upload_form').slideDown();
         });
     })
