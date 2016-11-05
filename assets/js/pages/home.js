@@ -19,9 +19,17 @@ $(document).ready(function() {
     });
 });
 /********************************************************/
+/*hide profile image from context card when card reveal*/
 $(document).ready(function(){
   $('#hide-profile-img').click(function(){
     var image_element = $(this).parent().closest('div').children('img');
     $(image_element).hide();
+  });
+});
+/*bring back profile image when card reveal closed*/
+$(document).ready(function(){
+  $('#card-reveal-close').click(function(){
+    var image_element = $('#hide-profile-img').parent().closest('div').children('img');
+    $(image_element).show();
   });
 });
