@@ -81,3 +81,12 @@ a.pos_with_image {
 
 
 /******************************************************/
+#partial-pos{
+    position: absolute;
+    top: -20px;
+    left: -20px;
+}
+#pad-left-top{
+  padding-left:20px;
+  padding-top: 20px;/*can be avoided*/
+}
