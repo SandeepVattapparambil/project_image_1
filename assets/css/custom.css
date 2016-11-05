@@ -97,3 +97,10 @@ a.pos_with_image {
   max-width: 200px;
   max-height: 200px;
 }
+/*********************************************************/
+.rule {
+    height: 1px;
+    margin: 0px 0;
+    overflow: hidden;
+    background-color: #EEEEEE;
+}
