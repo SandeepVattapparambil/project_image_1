@@ -588,22 +588,61 @@
                                 </div>
                             </div>
                         </div>
+
                         <div id="img_upload_form" class="card" style="display:none">
-                        <div class="card-content">Drop your images here..
-                          <a id="close_img_upload" href="#" class="activator grey-text">
-                            <i class="material-icons right">close</i>
-                          </a>
-                            <form action="/file-upload" class="dropzone dz-clickable">
-                                <div class="dz-default dz-message">
-                                    <span><img src="assets/images/upload.png" alt=""></span>
-                                </div>
-                            </form>
+                            <div class="card-content">Drop your images here..
+                                <a id="close_img_upload" href="#" class="activator grey-text">
+                                    <i class="material-icons right">close</i>
+                                </a>
+                                <form action="/file-upload" class="dropzone dz-clickable">
+                                    <div class="dz-default dz-message">
+                                        <span><img src="assets/images/upload.png" alt=""></span>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
+                        <!-- img uplaod Tabs-->
+                        <div class="col s12">
+                            <ul class="tabs">
+                                <li class="tab col s3"><a class="active" href="#test1">Upload</a></li>
+                                <li class="tab col s3"><a href="#test2">Fetch from URL</a></li>
+                            </ul>
+                        </div>
+                        <div id="test1" class="col s12">
+                            <div class="card">
+                                <div class="card-content">Drop your images here...
+                                    <a href="#" class="activator grey-text">
+                                        <i class="material-icons right">close</i>
+                                    </a>
+                                    <form action="/file-upload" class="dropzone dz-clickable">
+                                        <div class="dz-default dz-message">
+                                            <span><img src="assets/images/upload.png" alt=""></span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="test2" class="col s12">
+                            <div class="card">
+                                <div class="card-content">&nbsp;
+                                    <a href="#" class="activator grey-text">
+                                        <i class="material-icons right">close</i>
+                                    </a>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input id="url" type="email" class="validate">
+                                            <label for="email">Paste URL here</label>
+                                            <a class="lime waves-effect waves-light btn">Fetch</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- img uplaod Tabs end-->
+
+
                     </div>
-
                 </div>
-            </div>
-
         </main>
 
         </div>
