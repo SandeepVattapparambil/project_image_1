@@ -6,15 +6,16 @@ $(document).ready(function() {
 $(document).ready(function() {
     $('#img_upload_trigger').click(function() {
         $('#img_upload_trigger').fadeOut(function() {
-            $('#img_upload_form').slideDown();
+            $('#img-upload-tabs').slideDown();
+            $('ul.tabs').tabs('select_tab', 'test1');
         });
     })
 })
 $(document).ready(function() {
-    $('#close_img_upload').click(function() {
-        $('#img_upload_form').slideUp(function() {
+    $('#img-upload-close-1, #img-upload-close-2').click(function() {
+        $('#img-upload-tabs').slideUp(function() {
             $('#img_upload_trigger').fadeIn();
         });
     })
 })
-/******************************************************/
+/********************************************************/
