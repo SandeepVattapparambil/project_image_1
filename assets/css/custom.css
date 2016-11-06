@@ -81,37 +81,67 @@ a.pos_with_image {
 
 
 /******************************************************/
-#partial-pos{
+
+#partial-pos {
     position: absolute;
     top: -20px;
     left: -20px;
-    border:5px solid #F4F4F4;
-    z-index:998
+    border: 5px solid #F4F4F4;
+    z-index: 998
 }
-#pad-left-top{
-  padding-left:20px;
-  padding-top: 20px;/*can be avoided*/
+
+#pad-left-top {
+    padding-left: 20px;
+    padding-top: 20px;
+    /*can be avoided*/
 }
+
+
 /*****************************************************/
-.card_image{
-  border-radius: 5%;
-  max-width: 200px;
-  max-height: 200px;
+
+.card_image {
+    border-radius: 5%;
+    max-width: 200px;
+    max-height: 200px;
 }
+
+
 /*********************************************************/
+
 .rule {
     height: 1px;
     margin: 0px 0;
     overflow: hidden;
     background-color: #EEEEEE;
 }
+
+
 /********************************************/
-#pad-left-top > div.card.no_pad_img.col.s4.m4.l4{
-  padding-left: 0px;
-  padding-right: 0px;
+
+#pad-left-top>div.card.no_pad_img.col.s4.m4.l4 {
+    padding-left: 0px;
+    padding-right: 0px;
 }
+
+
 /********************************************/
-.follow_img_stack{
-  border:3px solid #fff;
-  margin-right: -15px;
+
+.follow_img_stack {
+    border: 3px solid #fff;
+    margin-right: -15px;
 }
+
+span.label {
+  position: relative;
+  top: -12px;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: #fff;
+    border-radius: 5px;
+    border: 3px solid #fff;
+}
+
+
+/******************************************/
