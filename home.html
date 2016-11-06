@@ -587,11 +587,15 @@
                                     <p class="valign">&nbsp;&nbsp;What's up today!...</p>
                                 </div>
                                 <div class="right">
-                                    <a class="btn-floating btn-large waves-effect lime"><i class="material-icons">photo_camera</i></a>
-                                    <a class="btn-floating btn-large waves-effect grey"><i class="material-icons">photo</i></a>
+                                    <a id="img_upload" class="btn-floating btn-large waves-effect lime">
+                                        <i class="material-icons">photo_camera</i>
+                                    </a>
+                                    <a id="url_upload" class="btn-floating btn-large waves-effect grey">
+                                        <i class="material-icons">photo</i>
+                                    </a>
                                 </div>
                             </div>
-                            <div id="dropzone_form">
+                            <div id="dropzone_form" style="display:none">
                                 <div class="rule"></div>
                                 <div class="card-content">Drop your images here...
                                     <form action="/file-upload" class="dropzone dz-clickable">
@@ -600,8 +604,12 @@
                                         </div>
                                     </form>
                                 </div>
+                                <div id="no_pad_up_down" class="card-action">
+                                    <p id="no_marg_up_down" class="center-align grey-text"><a href="#"><i class="material-icons">keyboard_arrow_up</i></a></p>
+                                </div>
                             </div>
-                            <div id="url_form">
+
+                            <div id="url_form" style="display:none">
                                 <div class="rule"></div>
                                 <div class="card-content">
                                     <div class="row">
@@ -612,10 +620,11 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div id="no_pad_up_down" class="card-action">
+                                    <p id="no_marg_up_down" class="center-align grey-text"><i class="material-icons">keyboard_arrow_up</i></p>
+                                </div>
                             </div>
-                            <div id="no_pad_up_down" class="card-action">
-                                <p id="no_marg_up_down" class="center-align grey-text"><i class="material-icons">keyboard_arrow_up</i></p>
-                            </div>
+
                         </div>
                     </div>
 

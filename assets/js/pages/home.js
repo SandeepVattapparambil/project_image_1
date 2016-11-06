@@ -19,3 +19,17 @@ $(document).ready(function() {
     });
 });
 /********************************************************/
+$(document).ready(function() {
+    $('#img_upload').click(function() {
+      $('#dropzone_form').fadeIn(function(){
+        $('#url_upload').fadeOut();
+      });
+    });
+});
+$(document).ready(function() {
+    $('#no_marg_up_down').click(function() {
+      $('#dropzone_form').slideUp(function(){
+        $('#url_upload').fadeIn();
+      });
+    });
+});
