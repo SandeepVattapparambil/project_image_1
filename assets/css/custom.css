@@ -110,3 +110,8 @@ a.pos_with_image {
   padding-left: 0px;
   padding-right: 0px;
 }
+/********************************************/
+.follow_img_stack{
+  border:3px solid #fff;
+  margin-right: -15px;
+}
