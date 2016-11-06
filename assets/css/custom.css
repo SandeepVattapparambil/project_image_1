@@ -118,11 +118,14 @@ a.pos_with_image {
 
 /********************************************/
 
-#pad-left-top>div.card.no_pad_img.col.s4.m4.l4 {
+#pad-left-top>div.card.no_pad_img.col.s12.m4.l4 {
     padding-left: 0px;
     padding-right: 0px;
 }
-
+#left-right-no-pad{
+  padding-left: 0px;
+  padding-right: 0px;
+}
 
 /********************************************/
 
