@@ -164,7 +164,7 @@ $(document).ready(function() {
 
     });
     // Modal
-    $('.modal-trigger').leanModal();
+    //$('.modal-trigger').leanModal();
 
     // Select
     $('select').material_select();
