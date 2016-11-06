@@ -95,7 +95,9 @@ a.pos_with_image {
     padding-top: 20px;
     /*can be avoided*/
 }
-
+#pad-left {
+    padding-left: 20px;
+}
 
 /*****************************************************/
 
@@ -123,7 +125,7 @@ a.pos_with_image {
     padding-right: 0px;
 }
 #left-right-no-pad{
-  padding-left: 0px;
+  padding-left: 5px;
   padding-right: 0px;
 }
 
