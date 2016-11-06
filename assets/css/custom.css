@@ -95,9 +95,11 @@ a.pos_with_image {
     padding-top: 20px;
     /*can be avoided*/
 }
+
 #pad-left {
     padding-left: 20px;
 }
+
 
 /*****************************************************/
 
@@ -124,10 +126,12 @@ a.pos_with_image {
     padding-left: 0px;
     padding-right: 0px;
 }
-#left-right-no-pad{
-  padding-left: 5px;
-  padding-right: 0px;
+
+#left-right-no-pad {
+    padding-left: 5px;
+    padding-right: 0px;
 }
+
 
 /********************************************/
 
@@ -137,8 +141,8 @@ a.pos_with_image {
 }
 
 span.label {
-  position: relative;
-  top: -12px;
+    position: relative;
+    top: -12px;
     padding-left: 4px;
     padding-right: 4px;
     font-weight: 300;
@@ -150,3 +154,9 @@ span.label {
 
 
 /******************************************/
+
+.new {
+    border-radius: 10px;
+    background-color: rgb(244, 244, 244);
+    padding: 10px;
+}
