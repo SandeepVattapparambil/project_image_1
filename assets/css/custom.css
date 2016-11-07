@@ -210,3 +210,11 @@ span.label {
 .hiden{
   display: none;
 }
+/*******************************/
+@@font-face {
+  font-family: 'anjali';
+  src: url('../fonts/anjali_old_lipi.ttf');
+}
+.malayalam{
+  font-family: anjali;
+}

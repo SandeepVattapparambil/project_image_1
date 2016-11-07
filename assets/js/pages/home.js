@@ -66,3 +66,4 @@ function drop_comment(selector1, selector2){
     $(icon).html('comment');
   }
 }
+/***********************************************/
