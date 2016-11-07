@@ -54,7 +54,10 @@ $(document).ready(function() {
 });
 /************************************************************/
 
-function drop_comment_box(selector) {
-    var comment_card = $(selector);
+function drop_comment_box(selector1, selector2) {
+  console.log(selector2);
+    var comment_card = $(selector1);
+    var icon = $(selector2);
+    $(icon).toggleClass('comment, arrow_upward');
     $(comment_card).slideToggle("slow");
 }
