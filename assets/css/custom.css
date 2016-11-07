@@ -161,16 +161,21 @@ span.label {
     padding: 10px;
 }
 
-#no_pad_up_down{
-  padding-top: 0px;
-  padding-bottom: 0px;
-  background-color: #e0e0e0;
+#no_pad_up_down {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: #e0e0e0;
 }
-#no_marg_up_down{
-  margin-top: 0px;
-  margin-bottom: 0px;
+
+#no_marg_up_down {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
-#no_marg_up_down1{
-  margin-top: 0px;
-  margin-bottom: 0px;
+
+#no_marg_up_down1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
+
+
+/***********************************************/
