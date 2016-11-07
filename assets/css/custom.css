@@ -122,7 +122,7 @@ a.pos_with_image {
 
 /********************************************/
 
-#pad-left-top>div.card.no_pad_img.col.s12.m4.l4 {
+#sides-no-pad>div.card.no_pad_img.col.s12.m4.l4 {
     padding-left: 0px;
     padding-right: 0px;
 }
@@ -132,7 +132,15 @@ a.pos_with_image {
     padding-right: 0px;
 }
 
+#left-no-pad {
+    padding-left: 0px;
+}
 
+#sides-no-pad {
+  padding-top: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
 /********************************************/
 
 .follow_img_stack {
@@ -179,49 +187,78 @@ span.label {
 
 
 /******************Custom input color*****************************/
+
+
 /* label color */
-   .input-field label {
-     color: #cddc39;
-   }
-   /* label focus color */
-   .input-field input[type=text]:focus + label {
-     color: #cddc39;
-   }
-   /* label underline focus color */
-   .input-field input[type=text]:focus {
-     border-bottom: 1px solid #cddc39;
-     box-shadow: 0 1px 0 0 #cddc39;
-   }
-   /* valid color */
-   .input-field input[type=text].valid {
-     border-bottom: 1px solid #cddc39;
-     box-shadow: 0 1px 0 0 #cddc39;
-   }
-   /* invalid color */
-   .input-field input[type=text].invalid {
-     border-bottom: 1px solid #000;
-     box-shadow: 0 1px 0 0 #000;
-   }
-   /* icon prefix focus color */
-   .input-field .prefix.active {
-     color: #cddc39;
-   }
+
+.input-field label {
+    color: #cddc39;
+}
+
+
+/* label focus color */
+
+.input-field input[type=text]:focus+label {
+    color: #cddc39;
+}
+
+
+/* label underline focus color */
+
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #cddc39;
+    box-shadow: 0 1px 0 0 #cddc39;
+}
+
+
+/* valid color */
+
+.input-field input[type=text].valid {
+    border-bottom: 1px solid #cddc39;
+    box-shadow: 0 1px 0 0 #cddc39;
+}
+
+
+/* invalid color */
+
+.input-field input[type=text].invalid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+
+
+/* icon prefix focus color */
+
+.input-field .prefix.active {
+    color: #cddc39;
+}
+
+
 /***********************************/
-.hiden{
-  display: none;
+
+.hiden {
+    display: none;
 }
+
+
 /*******************************/
+
 @@font-face {
-  font-family: 'anjali';
-  src: url('../fonts/anjali_old_lipi.ttf');
+    font-family: 'anjali';
+    src: url('../fonts/anjali_old_lipi.ttf');
 }
-.malayalam{
-  font-family: anjali;
+
+.malayalam {
+    font-family: anjali;
 }
+
+
 /***************************/
-a.foot{
-  font-style: 10px;
-  font-weight: normal;
-  color:hsla(211, 15%, 46%, 0.52);;
-  text-decoration: none;
+
+a.foot {
+    font-style: 10px;
+    font-weight: normal;
+    color: hsla(211, 15%, 46%, 0.52);
+    ;
+    text-decoration: none;
 }

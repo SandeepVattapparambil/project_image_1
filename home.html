@@ -531,6 +531,7 @@
         <main class="mn-inner inner-active-sidebar">
             <div class="middle-content">
                 <div class="row no-m-t no-m-b">
+                    <!--side cards col-->
                     <div class="col s12 m12 l3">
                         <ul class="collapsible" data-collapsible="accordion">
                             <li>
@@ -583,20 +584,21 @@
                                 <a class="btn-flat btn-floating lime lighten-3 lime-text text-darken-2" href="#"><i class="close material-icons">add</i></a>
                             </div>
                             <div class="card-content grey lighten-3">
-                              <a href="#" class="foot">© 2016</a>
-                              <a href="#" class="foot">Sitemap&nbsp;</a>
-                              <a href="#" class="foot">About&nbsp;</a>
-                              <a href="#" class="foot">Help&nbsp;</a>
-                              <a href="#" class="foot">Terms&nbsp;</a>
-                              <a href="#" class="foot">Priavcy&nbsp;</a>
-                              <a href="#" class="foot">Cookies&nbsp;</a>
-                              <a href="#" class="foot">Apps&nbsp;</a>
-                              <a href="#" class="foot">Careers&nbsp;</a>
-                              <a href="#" class="foot">Status&nbsp;</a>
+                                <a href="#" class="foot">© 2016</a>
+                                <a href="#" class="foot">Sitemap&nbsp;</a>
+                                <a href="#" class="foot">About&nbsp;</a>
+                                <a href="#" class="foot">Help&nbsp;</a>
+                                <a href="#" class="foot">Terms&nbsp;</a>
+                                <a href="#" class="foot">Priavcy&nbsp;</a>
+                                <a href="#" class="foot">Cookies&nbsp;</a>
+                                <a href="#" class="foot">Apps&nbsp;</a>
+                                <a href="#" class="foot">Careers&nbsp;</a>
+                                <a href="#" class="foot">Status&nbsp;</a>
                             </div>
                         </div>
                     </div>
-
+                    <!--side cards col ends-->
+                    <!--main cards col-->
                     <div id="pad-left-top" class="col s12 m12 l7">
                         <div id="new" class="card">
                             <div class="card-content">
@@ -644,80 +646,270 @@
                             </div>
 
                         </div>
-                    </div>
-
-
-                    <div id="pad-left" class="col s12 m12 l7">
-                        <div class="left">
-                            <a class="waves-effect grey lighten-2 btn-flat"><i class="material-icons">view_list</i></a>
-                            <a class="waves-effect grey lighten-2 btn-flat"><i class="material-icons">view_module</i></a>
-                        </div>
-                    </div>
-
-                    <div id="pad-left-top" class="col s12 m12 l7">
-                        <div id="img_post_card" class="card no_pad_img col s12 m4 l4">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="img-responsive" src="assets/images/card-image.jpg">
+                        <div id="left-no-pad" class="col s12 m12 l7">
+                            <div class="left">
+                                <a class="waves-effect grey lighten-2 btn-flat"><i class="material-icons">view_list</i></a>
+                                <a class="waves-effect grey lighten-2 btn-flat"><i class="material-icons">view_module</i></a>
                             </div>
-                            <img id="partial-pos" src="assets/images/profile.png" alt="profile-img" class="img-responsive circle" width="50" height="50">
                         </div>
-                        <div id="left-right-no-pad" class="col s12 m8 l8">
-                            <div id="height_set" class="card">
-                                <div class="card-content">
-                                    <span class="truncate activator grey-text text-darken-4">Sandeep <span class="grey-text">want to identify..</span>
-                                    <a href="#" class="right grey-text text-lighten">15sec ago<i class="material-icons right">more_vert</i></a>
-                                    </span>
+                        <div id="sides-no-pad" class="col s12 m12 l12">
+                            <div id="img_post_card" class="card no_pad_img col s12 m4 l4">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="img-responsive" src="assets/images/card-image.jpg">
                                 </div>
-                                <div class="rule"></div>
-                                <div class="card-content">
-                                    <div class="chip lime lighten-3">Animal</div>
-                                    <div class="chip">Location</div>in the image.
-                                    <a href="#">
-                                        <div class="chip lime right">..<i class="material-icons">mode_edit</i>..</div>
-                                    </a>
-                                </div>
-                                <div class="card-action">
-                                    <a href="#" class="lime-text text-darken-1"><i class="material-icons">thumb_up</i></a>
-                                    <a href="#" class="lime-text text-darken-1"><i class="material-icons">thumb_down</i></a>
-                                    <a href="#" class="lime-text text-darken-1"><i class="material-icons">hearing</i></a>
-                                    <a href="#" class="lime-text text-darken-1" onclick="drop_comment('#card_id', '#icon_id')">
-                                        <i id="icon_id" class="material-icons">comment</i>
-                                    </a>
-                                    <div class="right">
-                                        <img class="circle follow_img_stack" src="assets/images/profile.png" width="35">
-                                        <img class="circle follow_img_stack" src="assets/images/yuna.jpg" width="35">
-                                        <img class="circle follow_img_stack" src="assets/images/profile-image-2.png" width="35">
-                                        <span class="label lime">+ 7</span>
+                                <img id="partial-pos" src="assets/images/profile.png" alt="profile-img" class="img-responsive circle" width="50" height="50">
+                            </div>
+                            <div id="left-right-no-pad" class="col s12 m8 l8">
+                                <div id="height_set" class="card">
+                                    <div class="card-content">
+                                        <span class="truncate activator grey-text text-darken-4">Sandeep <span class="grey-text">want to identify..</span>
+                                        <a href="#" class="right grey-text text-lighten">15sec ago<i class="material-icons right">more_vert</i></a>
+                                        </span>
                                     </div>
-                                </div>
-                                <div id="card_id" class="card-action lime lighten-5 hiden">
-                                    <div class="row valign-wrapper">
-                                        <div class="col s2 valign">
-                                            <img src="assets/images/profile.png" alt="" class="circle responsive-img" width="35">
-                                            <!-- notice the "circle" class -->
-                                        </div>
-                                        <div class="input-field col s10 valign">
-                                            <input placeholder="Comment here.." id="first_name" type="text" class="validate">
+                                    <div class="rule"></div>
+                                    <div class="card-content">
+                                        <div class="chip lime lighten-3">Animal</div>
+                                        <div class="chip">Location</div>in the image.
+                                        <a href="#">
+                                            <div class="chip lime right">..<i class="material-icons">mode_edit</i>..</div>
+                                        </a>
+                                    </div>
+                                    <div class="card-action">
+                                        <a href="#" class="lime-text text-darken-1"><i class="material-icons">thumb_up</i></a>
+                                        <a href="#" class="lime-text text-darken-1"><i class="material-icons">thumb_down</i></a>
+                                        <a href="#" class="lime-text text-darken-1"><i class="material-icons">hearing</i></a>
+                                        <a href="#" class="lime-text text-darken-1" onclick="drop_comment('#card_id', '#icon_id')">
+                                            <i id="icon_id" class="material-icons">comment</i>
+                                        </a>
+                                        <div class="right">
+                                            <img class="circle follow_img_stack" src="assets/images/profile.png" width="35">
+                                            <img class="circle follow_img_stack" src="assets/images/yuna.jpg" width="35">
+                                            <img class="circle follow_img_stack" src="assets/images/profile-image-2.png" width="35">
+                                            <span class="label lime">+ 7</span>
                                         </div>
                                     </div>
-                                    <div class="row valign-wrapper">
-                                        <div class="col s2 valign">
-                                            <img src="assets/images/yuna.jpg" alt="" class="circle responsive-img" width="35">
-                                            <!-- notice the "circle" class -->
+                                    <div id="card_id" class="card-action lime lighten-5 hiden">
+                                        <div class="row valign-wrapper">
+                                            <div class="col s2 valign">
+                                                <img src="assets/images/profile.png" alt="" class="circle responsive-img" width="35">
+                                                <!-- notice the "circle" class -->
+                                            </div>
+                                            <div class="input-field col s10 valign">
+                                                <input placeholder="Comment here.." id="first_name" type="text" class="validate">
+                                            </div>
                                         </div>
-                                        <div class="input-field col s10 valign">
-                                            <p>I think its a wild dog</p>
+                                        <div class="row valign-wrapper">
+                                            <div class="col s2 valign">
+                                                <img src="assets/images/yuna.jpg" alt="" class="circle responsive-img" width="35">
+                                                <!-- notice the "circle" class -->
+                                            </div>
+                                            <div class="input-field col s10 valign">
+                                                <p>I think its a wild dog</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                                    <div class="card-reveal">
+                                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                                    </div>
                                 </div>
                             </div>
+                        </div>
 
+                        <div id="sides-no-pad" class="col s12 m12 l12">
+                            <div id="img_post_card" class="card no_pad_img col s12 m4 l4">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="img-responsive" src="assets/images/card-image.jpg">
+                                </div>
+                                <img id="partial-pos" src="assets/images/profile1.jpg" alt="profile-img" class="img-responsive circle" width="50" height="50">
+                            </div>
+                            <div id="left-right-no-pad" class="col s12 m8 l8">
+                                <div id="height_set" class="card">
+                                    <div class="card-content">
+                                        <span class="truncate activator grey-text text-darken-4">Sandeep <span class="grey-text">want to identify..</span>
+                                        <a href="#" class="right grey-text text-lighten">15sec ago<i class="material-icons right">more_vert</i></a>
+                                        </span>
+                                    </div>
+                                    <div class="rule"></div>
+                                    <div class="card-content">
+                                        <div class="chip lime lighten-3">Animal</div>
+                                        <div class="chip">Location</div>in the image.
+                                        <a href="#">
+                                            <div class="chip lime right">..<i class="material-icons">mode_edit</i>..</div>
+                                        </a>
+                                    </div>
+                                    <div class="card-action">
+                                        <a href="#" class="lime-text text-darken-1"><i class="material-icons">thumb_up</i></a>
+                                        <a href="#" class="lime-text text-darken-1"><i class="material-icons">thumb_down</i></a>
+                                        <a href="#" class="lime-text text-darken-1"><i class="material-icons">hearing</i></a>
+                                        <a href="#" class="lime-text text-darken-1" onclick="drop_comment('#card_2', '#icon_2')">
+                                            <i id="icon_2" class="material-icons">comment</i>
+                                        </a>
+                                        <div class="right">
+                                            <img class="circle follow_img_stack" src="assets/images/profile.png" width="35">
+                                            <img class="circle follow_img_stack" src="assets/images/yuna.jpg" width="35">
+                                            <img class="circle follow_img_stack" src="assets/images/profile-image-2.png" width="35">
+                                            <span class="label lime">+ 7</span>
+                                        </div>
+                                    </div>
+                                    <div id="card_2" class="card-action lime lighten-5 hiden">
+                                        <div class="row valign-wrapper">
+                                            <div class="col s2 valign">
+                                                <img src="assets/images/profile.png" alt="" class="circle responsive-img" width="35">
+                                                <!-- notice the "circle" class -->
+                                            </div>
+                                            <div class="input-field col s10 valign">
+                                                <input placeholder="Comment here.." id="first_name" type="text" class="validate">
+                                            </div>
+                                        </div>
+                                        <div class="row valign-wrapper">
+                                            <div class="col s2 valign">
+                                                <img src="assets/images/yuna.jpg" alt="" class="circle responsive-img" width="35">
+                                                <!-- notice the "circle" class -->
+                                            </div>
+                                            <div class="input-field col s10 valign">
+                                                <p>I think its a wild dog</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-reveal">
+                                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="sides-no-pad" class="col s12 m12 l12">
+                            <div id="img_post_card" class="card no_pad_img col s12 m4 l4">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="img-responsive" src="assets/images/card-image.jpg">
+                                </div>
+                                <img id="partial-pos" src="assets/images/profile4.jpg" alt="profile-img" class="img-responsive circle" width="50" height="50">
+                            </div>
+                            <div id="left-right-no-pad" class="col s12 m8 l8">
+                                <div id="height_set" class="card">
+                                    <div class="card-content">
+                                        <span class="truncate activator grey-text text-darken-4">Sandeep <span class="grey-text">want to identify..</span>
+                                        <a href="#" class="right grey-text text-lighten">15sec ago<i class="material-icons right">more_vert</i></a>
+                                        </span>
+                                    </div>
+                                    <div class="rule"></div>
+                                    <div class="card-content">
+                                        <div class="chip lime lighten-3">Animal</div>
+                                        <div class="chip">Location</div>in the image.
+                                        <a href="#">
+                                            <div class="chip lime right">..<i class="material-icons">mode_edit</i>..</div>
+                                        </a>
+                                    </div>
+                                    <div class="card-action">
+                                        <a href="#" class="lime-text text-darken-1"><i class="material-icons">thumb_up</i></a>
+                                        <a href="#" class="lime-text text-darken-1"><i class="material-icons">thumb_down</i></a>
+                                        <a href="#" class="lime-text text-darken-1"><i class="material-icons">hearing</i></a>
+                                        <a href="#" class="lime-text text-darken-1" onclick="drop_comment('#card_id', '#icon_id')">
+                                            <i id="icon_id" class="material-icons">comment</i>
+                                        </a>
+                                        <div class="right">
+                                            <img class="circle follow_img_stack" src="assets/images/profile.png" width="35">
+                                            <img class="circle follow_img_stack" src="assets/images/yuna.jpg" width="35">
+                                            <img class="circle follow_img_stack" src="assets/images/profile-image-2.png" width="35">
+                                            <span class="label lime">+ 7</span>
+                                        </div>
+                                    </div>
+                                    <div id="card_id" class="card-action lime lighten-5 hiden">
+                                        <div class="row valign-wrapper">
+                                            <div class="col s2 valign">
+                                                <img src="assets/images/profile.png" alt="" class="circle responsive-img" width="35">
+                                                <!-- notice the "circle" class -->
+                                            </div>
+                                            <div class="input-field col s10 valign">
+                                                <input placeholder="Comment here.." id="first_name" type="text" class="validate">
+                                            </div>
+                                        </div>
+                                        <div class="row valign-wrapper">
+                                            <div class="col s2 valign">
+                                                <img src="assets/images/yuna.jpg" alt="" class="circle responsive-img" width="35">
+                                                <!-- notice the "circle" class -->
+                                            </div>
+                                            <div class="input-field col s10 valign">
+                                                <p>I think its a wild dog</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-reveal">
+                                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="sides-no-pad" class="col s12 m12 l12">
+                            <div id="img_post_card" class="card no_pad_img col s12 m4 l4">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="img-responsive" src="assets/images/card-image.jpg">
+                                </div>
+                                <img id="partial-pos" src="assets/images/profile3.jpg" alt="profile-img" class="img-responsive circle" width="50" height="50">
+                            </div>
+                            <div id="left-right-no-pad" class="col s12 m8 l8">
+                                <div id="height_set" class="card">
+                                    <div class="card-content">
+                                        <span class="truncate activator grey-text text-darken-4">Sandeep <span class="grey-text">want to identify..</span>
+                                        <a href="#" class="right grey-text text-lighten">15sec ago<i class="material-icons right">more_vert</i></a>
+                                        </span>
+                                    </div>
+                                    <div class="rule"></div>
+                                    <div class="card-content">
+                                        <div class="chip lime lighten-3">Animal</div>
+                                        <div class="chip">Location</div>in the image.
+                                        <a href="#">
+                                            <div class="chip lime right">..<i class="material-icons">mode_edit</i>..</div>
+                                        </a>
+                                    </div>
+                                    <div class="card-action">
+                                        <a href="#" class="lime-text text-darken-1"><i class="material-icons">thumb_up</i></a>
+                                        <a href="#" class="lime-text text-darken-1"><i class="material-icons">thumb_down</i></a>
+                                        <a href="#" class="lime-text text-darken-1"><i class="material-icons">hearing</i></a>
+                                        <a href="#" class="lime-text text-darken-1" onclick="drop_comment('#card_id', '#icon_id')">
+                                            <i id="icon_id" class="material-icons">comment</i>
+                                        </a>
+                                        <div class="right">
+                                            <img class="circle follow_img_stack" src="assets/images/profile.png" width="35">
+                                            <img class="circle follow_img_stack" src="assets/images/yuna.jpg" width="35">
+                                            <img class="circle follow_img_stack" src="assets/images/profile-image-2.png" width="35">
+                                            <span class="label lime">+ 7</span>
+                                        </div>
+                                    </div>
+                                    <div id="card_id" class="card-action lime lighten-5 hiden">
+                                        <div class="row valign-wrapper">
+                                            <div class="col s2 valign">
+                                                <img src="assets/images/profile.png" alt="" class="circle responsive-img" width="35">
+                                                <!-- notice the "circle" class -->
+                                            </div>
+                                            <div class="input-field col s10 valign">
+                                                <input placeholder="Comment here.." id="first_name" type="text" class="validate">
+                                            </div>
+                                        </div>
+                                        <div class="row valign-wrapper">
+                                            <div class="col s2 valign">
+                                                <img src="assets/images/yuna.jpg" alt="" class="circle responsive-img" width="35">
+                                                <!-- notice the "circle" class -->
+                                            </div>
+                                            <div class="input-field col s10 valign">
+                                                <p>I think its a wild dog</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-reveal">
+                                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+<!--main cards col ends-->
+
                 </div>
         </main>
         </div>
