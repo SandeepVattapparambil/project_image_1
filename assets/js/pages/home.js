@@ -31,16 +31,16 @@ $(document).ready(function() {
 $(document).ready(function() {
     $('#url_upload').click(function() {
         $('#url_form').fadeIn(function() {
-            $('#img_upload').fadeOut(function(){
-              $('#pulse_input').pulsate({
-                  color: "#cddc39", // set the color of the pulse
-                  reach: 20, // how far the pulse goes in px
-                  speed: 1000, // how long one pulse takes in ms
-                  pause: 0, // how long the pause between pulses is in ms
-                  glow: true, // if the glow should be shown too
-                  repeat: false, // will repeat forever if true, if given a number will repeat for that many times
-                  onHover: false // if true only pulsate if user hovers over the element
-              });
+            $('#img_upload').fadeOut(function() {
+                $('#pulse_input').pulsate({
+                    color: "#cddc39", // set the color of the pulse
+                    reach: 20, // how far the pulse goes in px
+                    speed: 1000, // how long one pulse takes in ms
+                    pause: 0, // how long the pause between pulses is in ms
+                    glow: true, // if the glow should be shown too
+                    repeat: false, // will repeat forever if true, if given a number will repeat for that many times
+                    onHover: false // if true only pulsate if user hovers over the element
+                });
             });
         });
     });
@@ -52,3 +52,9 @@ $(document).ready(function() {
         });
     });
 });
+/************************************************************/
+
+function drop_comment_box(selector) {
+    var comment_card = $(selector);
+    $(comment_card).slideToggle("slow");
+}
