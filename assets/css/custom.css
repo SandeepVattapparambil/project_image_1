@@ -218,3 +218,10 @@ span.label {
 .malayalam{
   font-family: anjali;
 }
+/***************************/
+a.foot{
+  font-style: 10px;
+  font-weight: normal;
+  color:hsla(211, 15%, 46%, 0.52);;
+  text-decoration: none;
+}
