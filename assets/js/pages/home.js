@@ -53,11 +53,16 @@ $(document).ready(function() {
     });
 });
 /************************************************************/
-
-function drop_comment_box(selector1, selector2) {
-  console.log(selector2);
-    var comment_card = $(selector1);
-    var icon = $(selector2);
+function drop_comment(selector1, selector2){
+  var comment_card = $(selector1);
+  var icon = $(selector2);
+  if((comment_card).hasClass('hiden')){
+    $(comment_card).slideDown("slow");
+    $(comment_card).removeClass("hiden");
     $(icon).html('arrow_upward');
-    $(comment_card).slideToggle("slow");
+  } else {
+    $(comment_card).slideUp("slow");
+    $(comment_card).addClass("hiden");
+    $(icon).html('comment');
+  }
 }

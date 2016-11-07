@@ -206,3 +206,7 @@ span.label {
    .input-field .prefix.active {
      color: #cddc39;
    }
+/***********************************/
+.hiden{
+  display: none;
+}
