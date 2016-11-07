@@ -2,6 +2,23 @@
 $(document).ready(function() {
     console.log("App loaded !");
 });
+/************************************/
+$(document).ready(function() {
+    $('#img_upload').mouseenter(function() {
+        $('#img_upload').addClass('btn-large');
+    });
+    $('#img_upload').mouseleave(function() {
+        $('#img_upload').removeClass('btn-large');
+    });
+});
+$(document).ready(function() {
+    $('#url_upload').mouseenter(function() {
+        $('#url_upload').addClass('btn-large');
+    });
+    $('#url_upload').mouseleave(function() {
+        $('#url_upload').removeClass('btn-large');
+    });
+});
 /**********image upload form hero toggle***********/
 /********************************************************/
 $(document).ready(function() {
