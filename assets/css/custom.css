@@ -87,7 +87,7 @@ a.pos_with_image {
     top: -20px;
     left: -20px;
     border: 5px solid #F4F4F4;
-    z-index: 998
+    z-index: 994;
 }
 
 #pad-left-top {
