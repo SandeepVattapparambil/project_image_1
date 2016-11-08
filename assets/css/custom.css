@@ -137,10 +137,12 @@ a.pos_with_image {
 }
 
 #sides-no-pad {
-  padding-top: 20px;
+    padding-top: 20px;
     padding-left: 0px;
     padding-right: 0px;
 }
+
+
 /********************************************/
 
 .follow_img_stack {
@@ -151,6 +153,19 @@ a.pos_with_image {
 span.label {
     position: relative;
     top: -12px;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: #fff;
+    border-radius: 5px;
+    border: 3px solid #fff;
+}
+
+span.label_inline {
+    position: relative;
+    width: 10px;
+    height: 10px;
     padding-left: 4px;
     padding-right: 4px;
     font-weight: 300;
@@ -262,4 +277,6 @@ a.foot {
     ;
     text-decoration: none;
 }
+
+
 /**************************************/
