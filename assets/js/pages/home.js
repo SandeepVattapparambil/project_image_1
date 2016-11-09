@@ -70,17 +70,23 @@ $(document).ready(function() {
     });
 });
 /************************************************************/
-function drop_comment(selector1, selector2){
-  var comment_card = $(selector1);
-  var icon = $(selector2);
-  if((comment_card).hasClass('hiden')){
-    $(comment_card).slideDown("slow");
-    $(comment_card).removeClass("hiden");
-    $(icon).html('arrow_upward');
-  } else {
-    $(comment_card).slideUp("slow");
-    $(comment_card).addClass("hiden");
-    $(icon).html('comment');
-  }
+function drop_comment(selector1, selector2) {
+    var comment_card = $(selector1);
+    var icon = $(selector2);
+    if ((comment_card).hasClass('hiden')) {
+        $(comment_card).slideDown("slow");
+        $(comment_card).removeClass("hiden");
+        $(icon).html('arrow_upward');
+    } else {
+        $(comment_card).slideUp("slow");
+        $(comment_card).addClass("hiden");
+        $(icon).html('comment');
+    }
 }
 /***********************************************/
+$(document).ready(function() {
+    $('#carousel').carousel({
+      indicators: true,
+        full_width: true
+    });
+});
