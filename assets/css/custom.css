@@ -190,11 +190,9 @@ span.label_status {
     width: 10px;
     height: 10px;
     top: 26px;
-    left: -7px;
-    padding-left: 2px;
+    left: -5px;
+    padding-left: 4px;
     padding-right: 2px;
-    font-weight: 300;
-    font-size: 0.8rem;
     background-color: #fff;
     color: #fff;
     border-radius: 5px;
