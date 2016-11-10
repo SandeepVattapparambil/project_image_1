@@ -294,12 +294,19 @@ a.foot {
 
 
 /**************************************/
-#height_set > div > a.lime-text.text-darken-1.no_marg_right{
-  margin-right: 0px;
+
+#height_set>div>a.lime-text.text-darken-1.no_marg_right {
+    margin-right: 0px;
 }
+
+
 /************************************************/
-@media only screen and (max-device-width: 600px) {
-    #left-right-no-pad{
-      padding-left: 0px;
+
+
+/*max-device-width sets device as mobile/pc*/
+
+@media only screen and (max-width: 600px) {
+    #left-right-no-pad {
+        padding-left: 0px;
     }
 }
