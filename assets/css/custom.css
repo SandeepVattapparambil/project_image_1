@@ -28,7 +28,10 @@
     background: #757575;
 }
 ::-webkit-scrollbar-thumb:horizontal {
-    background: #bdbdbd;
+    background: transparent;
+}
+::-webkit-scrollbar-thumb:horizontal:window-inactive {
+    background: #e0e0e0;
 }
 
 ::-webkit-scrollbar-thumb:window-inactive {
@@ -317,7 +320,7 @@ a.foot {
 /*******************************************/
 .scroll-mobile{
   overflow-x: scroll;
-  -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling:touch;
   -webkit-transform: translateZ(0px);
   -webkit-transform: translate3d(0,0,0);
   -webkit-perspective: 1000;
