@@ -689,13 +689,15 @@
                                         </div>
                                     </div>
                                     <div class="card-action">
-                                        <a href="#" class="lime-text text-darken-1"><i class="material-icons">thumb_up</i></a>
-                                        <a href="#" class="lime-text text-darken-1"><i class="material-icons">thumb_down</i></a>
-                                        <a href="#" class="lime-text text-darken-1"><i class="material-icons">hearing</i></a>
+                                        <a href="javascript:void(0)" class="lime-text text-darken-1"><i class="material-icons">thumb_up</i></a>
+                                        <a href="javascript:void(0)" class="lime-text text-darken-1"><i class="material-icons">thumb_down</i></a>
+                                        <a href="javascript:void(0)" class="lime-text text-darken-1 no_marg_right" onclick="follow_add()">
+                                          <i class="material-icons">hearing</i><span class="label_icon grey lighten-1">+7</span>
+                                        </a>
                                         <a href="javascript:void(0)" class="lime-text text-darken-1" onclick="drop_comment('#card_id', '#icon_id')">
                                             <i id="icon_id" class="material-icons">comment</i><span class="label_icon grey lighten-1">2</span>
                                         </a>
-                                        <a class="chip lime lighten-3 grey-text hide-on-med-and-up">+7</a>
+
                                         <div class="right hide-on-small-only">
                                             <img class="circle follow_img_stack" src="assets/images/profile.png" width="35">
                                             <img class="circle follow_img_stack" src="assets/images/yuna.jpg" width="35">
@@ -870,16 +872,9 @@
 
                         <div id="sides-no-pad" class="col s12 m12 l12">
                             <div id="img_post_card" class="card no_pad_img col s12 m4 l4">
-                                <div id="carousel" class="card-image carousel carousel-slider">
-                                    <a class="carousel-item" href="#one!">
-                                        <img src="http://lorempixel.com/800/400/food/1"></a>
-                                    <a class="carousel-item" href="#two!">
-                                        <img src="http://lorempixel.com/800/400/food/2"></a>
-                                    <a class="carousel-item" href="#three!">
-                                        <img src="http://lorempixel.com/800/400/food/3"></a>
-                                    <a class="carousel-item" href="#four!">
-                                        <img src="http://lorempixel.com/800/400/food/4"></a>
-                                </div>
+                              <div class="card-image waves-effect waves-block waves-light">
+                                  <img class="img-responsive" src="assets/images/card-image2.jpg">
+                              </div>
                                 <img id="partial-pos" src="assets/images/profile4.jpg" alt="profile-img" class="img-responsive circle" width="50" height="50">
                             </div>
                             <div id="left-right-no-pad" class="col s12 m8 l8">
