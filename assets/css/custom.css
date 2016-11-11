@@ -104,6 +104,18 @@
     #pad-left {
         padding-left: 20px;
     }
+    /******************************************/
+
+    @media screen and (max-width: 1000px) {
+        #pad-left-top {
+          padding-left: 10px;
+        }
+    }
+    @media screen and (max-width: 480px) {
+        #pad-left-top {
+          padding-left: 0px;
+        }
+    }
     /*****************************************************/
 
     .card_image {
@@ -303,7 +315,6 @@
         -webkit-perspective: 1000;
         cursor: pointer;
     }
-     
     /**********************************/
 
     .btn-round {
