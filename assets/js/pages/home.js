@@ -84,10 +84,3 @@ function drop_comment(selector1, selector2) {
     }
 }
 /***********************************************/
-$(document).ready(function() {
-    $('#carousel').carousel({
-      indicators: true,
-        full_width: true
-    });
-});
-/**********************************************/
