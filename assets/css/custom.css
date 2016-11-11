@@ -358,3 +358,8 @@ a.foot {
     text-transform: none;
     color: rgba(0,0,0,0.54);
 }
+/*******************************************/
+div.card-reveal > div > div.text_inline{
+  display: inline;
+  top:10px;
+}
