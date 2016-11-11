@@ -30,8 +30,11 @@
             height: 5px;
         }
          ::-webkit-scrollbar-thumb:horizontal {
-            background: #e0e0e0;
+            background: #fff;
         }
+        ::-webkit-scrollbar-thumb:horizontal:hover {
+           background: #757575;
+       }
     }
 
      ::-webkit-scrollbar-thumb:horizontal:window-inactive {
