@@ -348,3 +348,13 @@ a.foot {
 .btn-round{
   border-radius: 18px;
 }
+/********************************************/
+.card > .card-reveal > .reveal-title{
+    line-height: 24px;
+    font-size: 13px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 20px;
+    text-transform: none;
+    color: rgba(0,0,0,0.54);
+}
