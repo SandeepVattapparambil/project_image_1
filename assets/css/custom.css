@@ -108,12 +108,13 @@
 
     @media screen and (max-width: 1000px) {
         #pad-left-top {
-          padding-left: 10px;
+            padding-left: 10px;
         }
     }
+
     @media screen and (max-width: 480px) {
         #pad-left-top {
-          padding-left: 5px;
+            padding-left: 5px;
         }
     }
     /*****************************************************/
@@ -122,6 +123,19 @@
         border-radius: 5%;
         max-width: 200px;
         max-height: 200px;
+    }
+
+    .overlay-text {
+        position: absolute;
+        right:5px;
+        bottom:-5px;
+        font-size: 10px;
+        color: #fff;
+        z-index: 9;
+        cursor: pointer;
+    }
+    .overlay-text i{
+        font-size: 18px;
     }
     /*********************************************************/
 
