@@ -32,9 +32,9 @@
          ::-webkit-scrollbar-thumb:horizontal {
             background: #fff;
         }
-        ::-webkit-scrollbar-thumb:horizontal:hover {
-           background: #757575;
-       }
+         ::-webkit-scrollbar-thumb:horizontal:hover {
+            background: #e0e0e0;
+        }
     }
 
      ::-webkit-scrollbar-thumb:horizontal:window-inactive {
