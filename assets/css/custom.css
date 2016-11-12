@@ -30,7 +30,7 @@
             height: 5px;
         }
          ::-webkit-scrollbar-thumb:horizontal {
-            background: #e0e0e0;
+            background: #fff;
             /*important*/
         }
          ::-webkit-scrollbar-thumb:horizontal:hover {
@@ -46,17 +46,6 @@
         background: #e0e0e0;
     }
 
-    .scroll-cover {
-        position: absolute;
-        background: #fff;
-        height: 10px;
-        top: 150px;
-        right: 0;
-        width: 100%;
-        transition: all .5s
-        -webkit-transition: all .5s;
-        opacity: 1;
-    }
     /**************************************************/
 
     @media only screen and (min-width: 601px) {
