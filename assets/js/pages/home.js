@@ -107,7 +107,11 @@ $(document).ready(function() {
         $(parent).after(content);
         $('#this_comment').fadeIn('slow');
         $('.close_this').click(function() {
-            $(this).parent().fadeOut('slow').remove();
+            $(this).parent().fadeOut('slow', function(){
+              //$(this).parent().fadeOut('slow').remove();
+              //remove comment box div
+              $('#this_comment').remove();
+            });
         });
     });
 });
