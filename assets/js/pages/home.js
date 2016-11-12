@@ -86,7 +86,32 @@ function drop_comment(selector1, selector2) {
 /***********************************************/
 $(document).ready(function() {
     $('.card-image').hover(function() {
-      $(this).parent().find('p').toggle();
+        $(this).parent().find('p').toggle();
     });
 });
 /*************************************************/
+$(document).ready(function() {
+    $('.reply').click(function() {
+        var parent = $(this).parent();
+        var content = '<div id="this_comment"class="row valign-wrapper" style="display:none">' +
+            '<div class="input-field col s8 valign">' +
+            '<input placeholder="Comment here.." id="first_name" type="text" class="validate">' +
+            '</div>' +
+            '<div class="col s2 valign">' +
+            '<a class="btn-floating waves-effect waves-light grey">' +
+            ' <i class="material-icons">send</i>' +
+            ' </a>' +
+            '</div>' +
+            ' <a class="grey-text close_this" href="javascript:void(0)"><i class="material-icons tiny">close</i></a>' +
+            '</div>';
+        $(parent).after(content);
+        $('#this_comment').fadeIn('slow');
+        $('.close_this').click(function() {
+            $(this).parent().fadeOut('slow').remove();
+        });
+    });
+});
+/***************************************************/
+
+$(document).ready(function() {;
+});
