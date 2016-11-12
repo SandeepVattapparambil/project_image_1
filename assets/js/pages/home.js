@@ -105,9 +105,9 @@ $(document).ready(function() {
             ' <a class="grey-text close_this" href="javascript:void(0)"><i class="material-icons tiny">close</i></a>' +
             '</div>';
         $(parent).after(content);
-        $('#this_comment').fadeIn('slow');
+        $('#this_comment').fadeIn();
         $('.close_this').click(function() {
-            $(this).parent().fadeOut('slow', function(){
+            $(this).parent().fadeOut(function(){
               //$(this).parent().fadeOut('slow').remove();
               //remove comment box div
               $('#this_comment').remove();
