@@ -91,7 +91,8 @@ $(document).ready(function() {
 });
 /*************************************************/
 $(document).ready(function() {
-    $('.reply').click(function() {
+    $('.reply').click(function(){
+      var trigger = $(".reply");
         var parent = $(this).parent();
         var content = '<div id="this_comment"class="row valign-wrapper" style="display:none">' +
             '<div class="input-field col s8 valign">' +
@@ -105,12 +106,14 @@ $(document).ready(function() {
             ' <a class="grey-text close_this" href="javascript:void(0)"><i class="material-icons tiny">close</i></a>' +
             '</div>';
         $(parent).after(content);
+        $(trigger).hide();
         $('#this_comment').fadeIn();
         $('.close_this').click(function() {
             $(this).parent().fadeOut(function() {
                 //$(this).parent().fadeOut('slow').remove();
                 //remove comment box div
                 $('#this_comment').remove();
+                $(trigger).show();
             });
         });
     });
