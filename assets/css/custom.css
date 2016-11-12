@@ -30,7 +30,8 @@
             height: 5px;
         }
          ::-webkit-scrollbar-thumb:horizontal {
-            background: #fff;
+            background: #e0e0e0;
+            /*important*/
         }
          ::-webkit-scrollbar-thumb:horizontal:hover {
             background: #e0e0e0;
@@ -43,6 +44,18 @@
 
      ::-webkit-scrollbar-thumb:window-inactive {
         background: #e0e0e0;
+    }
+
+    .scroll-cover {
+        position: absolute;
+        background: #fff;
+        height: 10px;
+        top: 150px;
+        right: 0;
+        width: 100%;
+        transition: all .5s
+        -webkit-transition: all .5s;
+        opacity: 1;
     }
     /**************************************************/
 
@@ -127,14 +140,15 @@
 
     .overlay-text {
         position: absolute;
-        right:5px;
-        bottom:-5px;
+        right: 5px;
+        bottom: -5px;
         font-size: 10px;
         color: #fff;
         z-index: 9;
         cursor: pointer;
     }
-    .overlay-text i{
+
+    .overlay-text i {
         font-size: 18px;
     }
     /*********************************************************/
