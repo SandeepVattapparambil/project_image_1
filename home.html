@@ -22,6 +22,7 @@
     <link href="assets/css/nprogress.css" rel="stylesheet">
     <link href="assets/plugins/dropzone/dropzone.min.css" rel="stylesheet">
     <link href="assets/plugins/dropzone/basic.min.css" rel="stylesheet">
+    <link href="assets/css/hover.css" rel="stylesheet" media="all" type="text/css">
 
     <!-- Theme Styles -->
     <link href="assets/css/alpha.css" rel="stylesheet" type="text/css" />
@@ -68,7 +69,7 @@
                             </a>
                         </li>
                         <li class="hide-on-med-and-down">
-                            <a href="javascript:void(0)" data-activates="dropdown1" class="dropdown-button dropdown-right show-on-large">
+                            <a href="javascript:void(0)" data-activates="dropdown1" class="dropdown-button dropdown-right show-on-large hvr-buzz-out">
                                 <i class="material-icons">notifications_none</i>
                                 <span class="badge grey">4</span>
                             </a>
@@ -690,12 +691,14 @@
                                         </div>
                                     </div>
                                     <div class="card-action">
-                                        <a href="javascript:void(0)" class="lime-text text-darken-1"><i class="material-icons">thumb_up</i></a>
-                                        <a href="javascript:void(0)" class="lime-text text-darken-1"><i class="material-icons">thumb_down</i></a>
-                                        <a href="javascript:void(0)" class="lime-text text-darken-1 no_marg_right" onclick="follow_add()">
+                                        <a href="javascript:void(0)" class="lime-text text-darken-1 no_marg_right">
+                                            <i class="material-icons">thumb_up</i><span class="label_icon_spaced grey lighten-1 hvr-wobble-vertical">2</span></a>
+                                        <a href="javascript:void(0)" class="lime-text text-darken-1 no_marg_right">
+                                          <i class="material-icons">thumb_down</i><span class="label_icon_spaced grey lighten-1 hvr-wobble-vertical">2</span></a>
+                                        <a href="javascript:void(0)" class="lime-text text-darken-1 no_marg_right hvr-buzz-out">
                                             <i class="material-icons">hearing</i><span class="label_icon grey lighten-1">+7</span>
                                         </a>
-                                        <a href="javascript:void(0)" class="lime-text text-darken-1" onclick="drop_comment('#card_id', '#icon_id')">
+                                        <a href="javascript:void(0)" class="lime-text text-darken-1 hvr-buzz-out no_marg_right" onclick="drop_comment('#card_id', '#icon_id')">
                                             <i id="icon_id" class="material-icons">comment</i><span class="label_icon grey lighten-1">2</span>
                                         </a>
 
