@@ -86,7 +86,7 @@ function drop_comment(selector1, selector2) {
 /***********************************************/
 $(document).ready(function() {
     $('.card-image').hover(function() {
-        $(this).parent().find('p').toggle();
+        $(this).parent().find('p').toggle('fast');
     });
 });
 /*************************************************/
