@@ -91,8 +91,8 @@ $(document).ready(function() {
 });
 /*************************************************/
 $(document).ready(function() {
-    $('.reply').click(function(){
-      var trigger = $(".reply");
+    $('.reply').click(function() {
+        var trigger = $(".reply");
         var parent = $(this).parent();
         var content = '<div id="this_comment"class="row valign-wrapper" style="display:none">' +
             '<div class="input-field col s8 valign">' +
@@ -141,14 +141,14 @@ var isMobile = {
     }
 };
 /*if mobile show loader*/
-if(isMobile.any()) {
-   //alert("This is a Mobile Device");
-   $(".fakeLoader").fakeLoader({
-       timeToHide: 1200, //Time in milliseconds for fakeLoader disappear
-       zIndex: "9999", //Default zIndex
-       //spinner: "spinner1", //Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
-       bgColor: "#cddc39 ", //Hex, RGB or RGBA colors
-       imagePath: "assets/images/logo.png" //If you want can you insert your custom image
-   });
+if (isMobile.any()) {
+    //alert("This is a Mobile Device");
+    $(".fakeLoader").fakeLoader({
+        timeToHide: 1200, //Time in milliseconds for fakeLoader disappear
+        zIndex: "9999", //Default zIndex
+        //spinner: "spinner1", //Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
+        bgColor: "#cddc39 ", //Hex, RGB or RGBA colors
+        imagePath: "assets/images/logo.png" //If you want can you insert your custom image
+    });
 }
 /********************************/
