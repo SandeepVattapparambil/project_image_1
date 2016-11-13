@@ -403,6 +403,6 @@
         transform: translateX(-8px);
     }
     /************************************************/
-div.col.s12.center.padding_bottom{
+div.col.s12.padding_bottom{
   padding-bottom: 10px;
 }

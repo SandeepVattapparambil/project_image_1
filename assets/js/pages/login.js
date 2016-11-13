@@ -40,3 +40,12 @@ if (isMobile.any()) {
     });
 }
 /********************************/
+$(document).ready(function() {
+    var width = $('#facebook').width();
+    if(isMobile.any()){
+    $('#google, #twitter, #facebook, #email').width(width);
+  }else{
+    $('#google, #twitter, #email').width(width);
+  }
+});
+/**********************************************/
