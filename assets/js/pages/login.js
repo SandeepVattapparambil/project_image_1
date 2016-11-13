@@ -1,10 +1,6 @@
-/*****************home******************************/
+/*****************Login******************************/
 $(document).ready(function() {
     console.log("App loaded !");
-    $('.carousel.carousel-slider').carousel({
-        full_width: true,
-        indicators: true
-    });
 });
 /***************************************************/
 /*Detect Mobile & Handheld*/
@@ -28,7 +24,7 @@ var isMobile = {
         return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
     }
 };
-/*if mobile show loader*/
+/*if mobile then show loader*/
 if (isMobile.any()) {
     //alert("This is a Mobile Device");
     $(".device-loader").fakeLoader({
@@ -40,6 +36,7 @@ if (isMobile.any()) {
     });
 }
 /********************************/
+/*****set width of button on login card*/
 $(document).ready(function() {
     var width = $('#facebook').width()+50;
     if(isMobile.any()){
