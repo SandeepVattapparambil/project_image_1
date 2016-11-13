@@ -46,41 +46,6 @@ $(document).ready(function() {
     }
 });
 /**********************************************/
-/*$(document).ready(function() {
-    $('#submit').click(function(e) {
-        var isValid = true;
-        $('#user_name, #password').each(function() {
-            if ($(this).val() == '') {
-                isValid = false;
-                $('#username_div').pulsate({
-                    color: "#f44336", // set the color of the pulse
-                    reach: 5, // how far the pulse goes in px
-                    speed: 300, // how long one pulse takes in ms
-                    pause: 0, // how long the pause between pulses is in ms
-                    glow: true, // if the glow should be shown too
-                    repeat: false, // will repeat forever if true, if given a number will repeat for that many times
-                    onHover: false
-                });
-                $('#password_div').pulsate({
-                  color: "#f44336", // set the color of the pulse
-                  reach: 5, // how far the pulse goes in px
-                  speed: 300, // how long one pulse takes in ms
-                  pause: 0, // how long the pause between pulses is in ms
-                  glow: true, // if the glow should be shown too
-                  repeat: false, // will repeat forever if true, if given a number will repeat for that many times
-                  onHover: false
-                });
-            } else {
-                $(this).css({
-                    "border": "",
-                    "background": ""
-                });
-            }
-        });
-        if (isValid == false)
-            e.preventDefault();
-    });
-});*/
 /**********************************************/
 $(document).ready(function(){
   $('#submit').click(function(e){
