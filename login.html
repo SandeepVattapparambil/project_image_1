@@ -45,30 +45,32 @@
                         <span class="card-title">Yimage</span>
                         <div class="row">
                             <div class="col s12 m6 l6" style="padding-bottom:10px">
-                                <p class="center">Sign In</p>
-                                <div class="input-field col s12">
-                                    <i class="material-icons prefix">account_circle</i>
-                                    <input id="user_name" type="text" class="validate">
-                                    <label for="user_name">User Name</label>
-                                </div>
-                                <div class="input-field col s12">
-                                    <i class="material-icons prefix">https</i>
-                                    <input id="password" type="text" class="validate">
-                                    <label for="password">Password</label>
-                                </div>
-                                <div class="input-field col s6">
-                                    <input type="checkbox" id="test5" />
-                                    <label for="test5">Remember me!</label>
-                                </div>
-                                <div class="input-field col s6">
-                                    <p><label>
+                                <form name="login" method="POST">
+                                    <p class="center">Sign In</p>
+                                    <div id="username_div" class="input-field col s12">
+                                        <i class="material-icons prefix">account_circle</i>
+                                        <input id="user_name" type="text" class="validate">
+                                        <label for="user_name">User Name</label>
+                                    </div>
+                                    <div id="password_div" class="input-field col s12">
+                                        <i class="material-icons prefix">https</i>
+                                        <input id="password" type="text" class="validate">
+                                        <label for="password">Password</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <input type="checkbox" id="test5" />
+                                        <label for="test5">Remember me!</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <p><label>
                                       <a href="javascript:void(0)" class="lime-text">Forgot Password?</a>
                                     </label></p>
-                                </div>
-                                <div class="input-field col s12 center" style="padding-top:10px">
-                                    <a href="#" class="btn btn-round lime waves-effect">
-                                        <i class="material-icons left">perm_identity</i>Sign In</a>
-                                </div>
+                                    </div>
+                                    <div class="input-field col s12 center" style="padding-top:10px">
+                                        <button id="submit" class="btn btn-round lime waves-effect" name="submit" type="submit">
+                                          <i class="material-icons left">perm_identity</i>Sign In</button>
+                                    </div>
+                                </form>
                             </div>
                             <div id="sign_up_div" class="col s12 m6 l6">
                                 <div class="rule hide-on-med-and-up"></div>
