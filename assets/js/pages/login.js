@@ -40,17 +40,3 @@ if (isMobile.any()) {
     });
 }
 /********************************/
-$(document).ready(function() {
-    $('#sign_up').click(function() {
-        $('#sign_in_card, #sign_in_action').hide();
-        $('#sign_in').removeClass('on');
-        $('#sign_up_card, #sign_up_action').fadeIn();
-        $('#sign_up').addClass('on');
-    });
-    $('#sign_in').click(function() {
-        $('#sign_up_card, #sign_up_action').hide();
-        $('#sign_up').removeClass('on');
-        $('#sign_in_card, #sign_in_action').fadeIn();
-        $('#sign_in').addClass('on');
-    });
-});

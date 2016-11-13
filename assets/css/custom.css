@@ -403,20 +403,3 @@
         transform: translateX(-8px);
     }
     /************************************************/
-
-    .login-page {
-        height: 100%;
-        width: 100%;
-        background-size: cover;
-    }
-
-    .login_title {
-        font-size: x-large;
-        font-weight: 300;
-        font-style: normal;
-    }
-
-    .card-content>span.login_title.on {
-        border-bottom: solid #cddc39;
-        padding-bottom: 5px;
-    }
