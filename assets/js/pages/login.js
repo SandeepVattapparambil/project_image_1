@@ -1,6 +1,7 @@
 /*****************home******************************/
 $(document).ready(function() {
     console.log("App loaded !");
+    $('.carousel.carousel-slider').carousel({full_width: true, indicators : true});
 });
 /***************************************************/
 /*Detect Mobile & Handheld*/
