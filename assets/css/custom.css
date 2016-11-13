@@ -326,7 +326,6 @@
         font-style: 10px;
         font-weight: normal;
         color: hsla(211, 15%, 46%, 0.52);
-        ;
         text-decoration: none;
     }
     /**************************************/
@@ -403,6 +402,12 @@
         transform: translateX(-8px);
     }
     /************************************************/
-div.col.s12.padding_bottom{
-  padding-bottom: 10px;
-}
+
+    div.col.s12.padding_bottom {
+        padding-bottom: 10px;
+    }
+    /*********************************/
+  #footer_login > a.footer_text{
+    font-size: 10px;
+    text-transform: none;
+  }
