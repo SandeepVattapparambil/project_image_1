@@ -397,3 +397,8 @@
         transform: translateX(-8px);
     }
     /************************************************/
+    .login-page {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
