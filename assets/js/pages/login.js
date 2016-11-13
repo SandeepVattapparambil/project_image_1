@@ -41,11 +41,11 @@ if (isMobile.any()) {
 }
 /********************************/
 $(document).ready(function() {
-    var width = $('#facebook').width();
+    var width = $('#facebook').width()+50;
     if(isMobile.any()){
-    $('#google, #twitter, #facebook, #email').width(width);
+    $('#google, #twitter, #facebook, #email').width(width-30);
   }else{
-    $('#google, #twitter, #email').width(width);
+    $('#google, #twitter, #facebook, #email').width(width);
   }
 });
 /**********************************************/
