@@ -47,35 +47,58 @@ $(document).ready(function() {
 });
 /**********************************************/
 /**********************************************/
-$(document).ready(function(){
-  $('#submit').click(function(e){
-    e.preventDefault();
-    var user_name = $('#user_name').val();
-    var password = $('#password').val();
-    if(user_name == ''){
-      $('#username_div').pulsate({
-          color: "#f44336", // set the color of the pulse
-          reach: 5, // how far the pulse goes in px
-          speed: 300, // how long one pulse takes in ms
-          pause: 0, // how long the pause between pulses is in ms
-          glow: true, // if the glow should be shown too
-          repeat: false, // will repeat forever if true, if given a number will repeat for that many times
-          onHover: false
-      });
-    }
-    else if(password == ''){
-      $('#password_div').pulsate({
-          color: "#f44336", // set the color of the pulse
-          reach: 5, // how far the pulse goes in px
-          speed: 300, // how long one pulse takes in ms
-          pause: 0, // how long the pause between pulses is in ms
-          glow: true, // if the glow should be shown too
-          repeat: false, // will repeat forever if true, if given a number will repeat for that many times
-          onHover: false
-      });
-    }
-    else{
-      //send data to form via ajax
-    }
-  });
+$(document).ready(function() {
+    $('#submit').click(function(e) {
+        e.preventDefault();
+        var user_name = $('#user_name').val();
+        var password = $('#password').val();
+        //if both empty
+        if (user_name == '' && password == '') {
+            $('#username_div').pulsate({
+                color: "#f44336", // set the color of the pulse
+                reach: 5, // how far the pulse goes in px
+                speed: 300, // how long one pulse takes in ms
+                pause: 0, // how long the pause between pulses is in ms
+                glow: true, // if the glow should be shown too
+                repeat: false, // will repeat forever if true, if given a number will repeat for that many times
+                onHover: false
+            });
+            $('#password_div').pulsate({
+                color: "#f44336", // set the color of the pulse
+                reach: 5, // how far the pulse goes in px
+                speed: 300, // how long one pulse takes in ms
+                pause: 0, // how long the pause between pulses is in ms
+                glow: true, // if the glow should be shown too
+                repeat: false, // will repeat forever if true, if given a number will repeat for that many times
+                onHover: false
+            });
+        }
+        //if only password empty
+        else if (user_name != '' && password == '') {
+            $('#password_div').pulsate({
+                color: "#f44336", // set the color of the pulse
+                reach: 5, // how far the pulse goes in px
+                speed: 300, // how long one pulse takes in ms
+                pause: 0, // how long the pause between pulses is in ms
+                glow: true, // if the glow should be shown too
+                repeat: false, // will repeat forever if true, if given a number will repeat for that many times
+                onHover: false
+            });
+        }
+        //if only username empty
+        else if (user_name == '' && password != '') {
+            $('#username_div').pulsate({
+                color: "#f44336", // set the color of the pulse
+                reach: 5, // how far the pulse goes in px
+                speed: 300, // how long one pulse takes in ms
+                pause: 0, // how long the pause between pulses is in ms
+                glow: true, // if the glow should be shown too
+                repeat: false, // will repeat forever if true, if given a number will repeat for that many times
+                onHover: false
+            });
+        }
+        else {
+            //send data to form via ajax
+        }
+    });
 });
