@@ -119,7 +119,7 @@ $(document).ready(function() {
     });
 });
 /***************************************************/
-/*Detect Mobile*/
+/*Detect Mobile & Handheld*/
 var isMobile = {
     Android: function() {
         return navigator.userAgent.match(/Android/i);
@@ -143,7 +143,7 @@ var isMobile = {
 /*if mobile show loader*/
 if (isMobile.any()) {
     //alert("This is a Mobile Device");
-    $(".fakeLoader").fakeLoader({
+    $(".device-loader").fakeLoader({
         timeToHide: 1200, //Time in milliseconds for fakeLoader disappear
         zIndex: "9999", //Default zIndex
         //spinner: "spinner1", //Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
