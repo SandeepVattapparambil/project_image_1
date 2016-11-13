@@ -299,6 +299,12 @@
     .input-field .prefix.active {
         color: #cddc39;
     }
+    /* label focus color */
+
+    input[type=checkbox]:checked+label:before {
+        border-right: 2px solid #cddc39;
+        border-bottom: 2px solid #cddc39;
+    }
     /***********************************/
 
     .hiden {
@@ -410,7 +416,7 @@
         font-style: normal;
     }
 
-    .card-content> span.login_title.on {
+    .card-content>span.login_title.on {
         border-bottom: solid #cddc39;
         padding-bottom: 5px;
     }

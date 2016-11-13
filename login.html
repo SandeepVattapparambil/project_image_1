@@ -41,7 +41,7 @@
         <main class="mn-inner container">
             <div class="valign">
                 <div class="row">
-                    <div class="col s12 m6">
+                    <div class="col l6 hide-on-med-and-down">
                         <div class="card hoverable">
                             <div class="carousel carousel-slider center" data-indicators="true">
                                 <div class="carousel-item green white-text" href="#one!">
@@ -63,7 +63,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col s12 m6">
+                    <div class="col s12 m12 l6">
                         <div class="card hoverable">
                             <div class="card-content grey-text">
                                 <span class="login_title on">Sign In</span> &nbsp;or&nbsp; <span class="login_title">Sign Up</span>
@@ -71,19 +71,27 @@
                             <div class="card-content grey-text">
                                 <div class="row">
                                     <div class="input-field col s12">
+                                      <i class="material-icons prefix">account_circle</i>
                                         <input id="user_name" type="text" class="validate">
                                         <label for="user_name">User Name</label>
                                     </div>
                                     <div class="input-field col s12">
+                                      <i class="material-icons prefix">visibility</i>
                                         <input id="password" type="text" class="validate">
                                         <label for="password">Password</label>
                                     </div>
+                                    <div class="input-field col s6">
+                                        <input type="checkbox" id="test5" />
+                                        <label for="test5">Remember me!</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <p><a class="waves-effect btn-flat lime-text">Forgot Password?</a></p>
+                                    </div>
                                 </div>
-
                             </div>
                             <div class="card-action">
-                                <a href="#">This is a link</a>
-                                <a href="#">This is a link</a>
+                                <a href="#" class="btn btn-round lime waves-effect">
+                                  <i class="material-icons left">add</i>Sign In</a>
                             </div>
                         </div>
                     </div>
