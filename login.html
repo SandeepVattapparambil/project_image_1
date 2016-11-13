@@ -19,6 +19,7 @@
     <link href="assets/css/nprogress.css" rel="stylesheet">
     <link href="assets/css/hover.css" rel="stylesheet" media="all" type="text/css">
     <link href="assets/css/fakeLoader.css" rel="stylesheet" media="all" type="text/css">
+    <link href="assets/css/materialdesignicons.css" media="all" rel="stylesheet" type="text/css" />
 
     <!-- Theme Styles -->
     <link href="assets/css/alpha.css" rel="stylesheet" type="text/css" />
@@ -37,91 +38,74 @@
 <body class="login-page lime">
     <div class="device-loader"></div>
     <div class="container">
-      <div class="row">
-          <div class="col s12 l6">
-              <div class="card">
-                  <div id="sign_in_card" class="card-content grey-text">
-                      <span id="sign_in" class="card-title">Sign In</span>
-                      <div class="row">
-                          <div class="input-field col s12">
-                              <i class="material-icons prefix">account_circle</i>
-                              <input id="user_name" type="text" class="validate">
-                              <label for="user_name">User Name</label>
-                          </div>
-                          <div class="input-field col s12">
-                              <i class="material-icons prefix">visibility</i>
-                              <input id="password" type="text" class="validate">
-                              <label for="password">Password</label>
-                          </div>
-                          <div class="input-field col s6">
-                              <input type="checkbox" id="test5" />
-                              <label for="test5">Remember me!</label>
-                          </div>
-                          <div class="input-field col s6">
-                              <p><label for="test5">Forgot Password?</label></p>
-                          </div>
-                      </div>
-                  </div>
-                  <div id="sign_in_action" class="card-action">
-                      <a href="#" class="btn btn-round lime waves-effect">
-                          <i class="material-icons left">perm_identity</i>Sign In</a>
-                  </div>
-              </div>
-
-          </div>
-
-          <div class="col s12 l6">
-              <div class="card">
-                  <div id="sign_up_card" class="card-content grey-text">
-                      <span id="sign_up" class="card-title">Sign Up</span>
-                      <div class="row">
-                          <div class="input-field col s12">
-                              <i class="material-icons prefix">account_circle</i>
-                              <input id="user_name" type="text" class="validate">
-                              <label for="user_name">User Name</label>
-                          </div>
-                          <div class="input-field col s12">
-                              <i class="material-icons prefix">visibility</i>
-                              <input id="password" type="text" class="validate">
-                              <label for="password">Password</label>
-                          </div>
-                          <div class="input-field col s6">
-                              <input type="checkbox" id="test5" />
-                              <label for="test5">Remember me!</label>
-                          </div>
-                          <div class="input-field col s6">
-                              <p><label for="test5">Forgot Password?</label></p>
-                          </div>
-                      </div>
-                  </div>
-                  <div id="sign_up_action" class="card-action">
-                      <a href="#" class="btn btn-round lime waves-effect">
-                          <i class="material-icons left">perm_identity</i>Sign In</a>
-                  </div>
-              </div>
-
-          </div>
-      </div>
+        <div class="row" style="padding-top:10%">
+            <div class="col s12">
+                <div class="card">
+                    <div id="sign_in_card" class="card-content s6 grey-text">
+                        <span id="sign_in" class="card-title">Sign In</span>
+                        <div class="row">
+                            <div class="col s12 m6 l6">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input id="user_name" type="text" class="validate">
+                                    <label for="user_name">User Name</label>
+                                </div>
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">visibility</i>
+                                    <input id="password" type="text" class="validate">
+                                    <label for="password">Password</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input type="checkbox" id="test5" />
+                                    <label for="test5">Remember me!</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <p><label for="test5">Forgot Password?</label></p>
+                                </div>
+                            </div>
+                            <div class="col s12 m6 l6">
+                                <div class="col s12 center padding_bottom">
+                                    <a class="waves-effect waves-light red btn"><i class="mdi mdi-google left"></i>Google</a>
+                                </div>
+                                <div class="col s12 center padding_bottom">
+                                    <a class="waves-effect waves-light indigo btn"><i class="mdi mdi-facebook-box left"></i>Facebook</a>
+                                </div>
+                                <div class="col s12 center padding_bottom">
+                                    <a class="waves-effect cyan btn"><i class="mdi mdi-twitter left"></i>Twitter</a>
+                                </div>
+                                <div class="col s12 center">
+                                    <a class="waves-effect white btn"><i class="mdi mdi-gmail left"></i>Email</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="sign_in_action" class="card-action">
+                        <a href="#" class="btn btn-round lime waves-effect">
+                            <i class="material-icons left">perm_identity</i>Sign In</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
-        <!-- Javascripts -->
-        <!-- jQuery -->
-        <script src="assets/plugins/jquery/jquery-2.2.0.min.js"></script>
-        <!-- FakeLoader -->
-        <script src="assets/js/fakeLoader.js"></script>
-        <!-- NProgress Slim Loader -->
-        <script src="assets/js/nprogress.js"></script>
-        <script src="assets/js/nprogress_config.js"></script>
-        <!-- Materialize jQuery library-->
-        <script src="assets/plugins/materialize/js/materialize.js"></script>
-        <!-- jQuery blockui -->
-        <script src="assets/plugins/jquery-blockui/jquery.blockui.js"></script>
+    <!-- Javascripts -->
+    <!-- jQuery -->
+    <script src="assets/plugins/jquery/jquery-2.2.0.min.js"></script>
+    <!-- FakeLoader -->
+    <script src="assets/js/fakeLoader.js"></script>
+    <!-- NProgress Slim Loader -->
+    <script src="assets/js/nprogress.js"></script>
+    <script src="assets/js/nprogress_config.js"></script>
+    <!-- Materialize jQuery library-->
+    <script src="assets/plugins/materialize/js/materialize.js"></script>
+    <!-- jQuery blockui -->
+    <script src="assets/plugins/jquery-blockui/jquery.blockui.js"></script>
 
-        <!-- Main App -->
-        <script src="assets/js/alpha.js"></script>
-        <!-- Page Code -->
-        <script src="assets/js/pages/login.js"></script>
+    <!-- Main App -->
+    <script src="assets/js/alpha.js"></script>
+    <!-- Page Code -->
+    <script src="assets/js/pages/login.js"></script>
 
 </body>
 
