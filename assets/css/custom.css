@@ -407,14 +407,21 @@
         padding-bottom: 10px;
     }
     /*********************************/
-  #footer_login > a.footer_text{
-    font-size: 10px;
-    text-transform: none;
-  }
-/****************************************/
 
-@media only screen and (min-width : 601px){
-  #sign_up_div{
-    border-left: solid 1px #e0e0e0;
-  }
-}
+    #footer_login>a.footer_text {
+        font-size: 10px;
+        text-transform: none;
+    }
+    /****************************************/
+
+    @media only screen and (min-width: 601px) {
+        #sign_up_div {
+            border-left: solid 1px #e0e0e0;
+        }
+    }
+    /***************************************************/
+
+    a.chip.small-text {
+        font-size: 10px;
+    }
+    /*****************************************************
