@@ -18,6 +18,7 @@
     "jquery-touchswipe": "^1.6.15",
     "mdi": "^1.7.22",
     "nprogress": "^0.2.0",
-    "roboto-fontface": "^0.6.0"
+    "roboto-fontface": "^0.6.0",
+    "simplebar": "^2.0.0-beta.3"
   }
 }
