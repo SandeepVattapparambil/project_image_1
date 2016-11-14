@@ -55,7 +55,7 @@ $(document).ready(function() {
         //if both empty
         if (user_name == '' && password == '') {
             $('#username_div').pulsate({
-                color: "#f44336", // set the color of the pulse
+                color: "#ffeb3b ", // set the color of the pulse
                 reach: 5, // how far the pulse goes in px
                 speed: 300, // how long one pulse takes in ms
                 pause: 0, // how long the pause between pulses is in ms
@@ -64,7 +64,7 @@ $(document).ready(function() {
                 onHover: false
             });
             $('#password_div').pulsate({
-                color: "#f44336", // set the color of the pulse
+                color: "#ffeb3b ", // set the color of the pulse
                 reach: 5, // how far the pulse goes in px
                 speed: 300, // how long one pulse takes in ms
                 pause: 0, // how long the pause between pulses is in ms
@@ -76,7 +76,7 @@ $(document).ready(function() {
         //if only password empty
         else if (user_name != '' && password == '') {
             $('#password_div').pulsate({
-                color: "#f44336", // set the color of the pulse
+                color: "#ffeb3b ", // set the color of the pulse
                 reach: 5, // how far the pulse goes in px
                 speed: 300, // how long one pulse takes in ms
                 pause: 0, // how long the pause between pulses is in ms
@@ -88,7 +88,7 @@ $(document).ready(function() {
         //if only username empty
         else if (user_name == '' && password != '') {
             $('#username_div').pulsate({
-                color: "#f44336", // set the color of the pulse
+                color: "#ffeb3b ", // set the color of the pulse
                 reach: 5, // how far the pulse goes in px
                 speed: 300, // how long one pulse takes in ms
                 pause: 0, // how long the pause between pulses is in ms
