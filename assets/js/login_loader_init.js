@@ -1,7 +1,12 @@
 /*****************Login******************************/
 $(document).ready(function() {
+    loadpage();
+    console.log("App loaded !");
+});
+
+function loadpage() {
     /*if mobile then show loader*/
-    if(isMobile.any()) {
+    if (isMobile.any()) {
         //alert("This is a Mobile Device");
         $(".device-loader").fakeLoader({
             timeToHide: 1200, //Time in milliseconds for fakeLoader disappear
@@ -10,9 +15,9 @@ $(document).ready(function() {
             bgColor: "#cddc39 ", //Hex, RGB or RGBA colors
             imagePath: "assets/images/logo.png" //If you want can you insert your custom image
         });
+        console.log('Mobile!');
     }
-    console.log("App loaded !");
-});
+}
 /***************************************************/
 /*Detect Mobile & Handheld*/
 var isMobile = {
