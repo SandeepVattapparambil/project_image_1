@@ -435,3 +435,12 @@
             margin-bottom: 10px;
         }
     }
+/******************************************/
+ div > img.on-image{
+  position: absolute;
+  top:2px;
+  left:2px;
+  z-index: 1;
+  width: 25px;
+  height: 25px;
+}
