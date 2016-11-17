@@ -115,3 +115,12 @@ $(document).ready(function() {
     });
 });
 /***************************************************/
+/******************tooltipster********************/
+$(document).ready(function() {
+    $('.tooltip').tooltipster({
+        animation: 'fade',
+        delay: 200,
+        theme: 'tooltipster-punk',
+        side: 'right'
+    });
+});
