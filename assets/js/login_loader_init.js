@@ -1,4 +1,5 @@
 /*****************Login******************************/
+
 $(document).ready(function() {
     loadPage();
     console.log("App loaded !");
@@ -16,9 +17,8 @@ function loadPage() {
             bgColor: "#cddc39 ", //Hex, RGB or RGBA colors
             imagePath: "assets/images/logo.png" //If you want can you insert your custom image
         });
-    }
-    else{
-      console.log("Device identified as PC");
+    } else {
+        console.log("Device identified as PC");
     }
 }
 
