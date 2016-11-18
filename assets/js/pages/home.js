@@ -129,16 +129,20 @@ $(document).ready(function() {
 $(document).ready(function() {
     $('#view_list').click(function() {
         //console.log('list clicked');
+        NProgress.start();
         $('.card-view-item').fadeOut(function() {
             $('.list-view-item').fadeIn();
+            NProgress.done();
         });
     });
 });
 $(document).ready(function() {
     $('#view_module').click(function() {
         //console.log('Cards clicked');
+        NProgress.start();
         $('.list-view-item').fadeOut(function() {
             $('.card-view-item').fadeIn();
+            NProgress.done();
         });
     });
 });
