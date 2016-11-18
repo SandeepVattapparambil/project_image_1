@@ -126,10 +126,10 @@ $(document).ready(function() {
 });
 /********Bot*********/
 $(document).ready(function() {
-    $('.bot').tooltipster({
+    $('.bot-btn').tooltipster({
         animation: 'fade',
         delay: 200,
-        theme: 'tooltipster-punk',
+        theme: 'tooltipster-borderless',
         side: 'left'
     });
 });
@@ -156,3 +156,6 @@ $(document).ready(function() {
     });
 });
 /*************************************************/
+$(document).ready(function() {
+    $('#bot').addClass('animated bounceIn');
+});
