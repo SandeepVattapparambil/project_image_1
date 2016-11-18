@@ -1,5 +1,4 @@
 /*****************Login******************************/
-
 $(document).ready(function() {
     loadPage();
     console.log("App loaded !");
