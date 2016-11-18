@@ -124,6 +124,15 @@ $(document).ready(function() {
         side: 'right'
     });
 });
+/********Bot*********/
+$(document).ready(function() {
+    $('.bot').tooltipster({
+        animation: 'fade',
+        delay: 200,
+        theme: 'tooltipster-punk',
+        side: 'left'
+    });
+});
 /**********************************************/
 /*******Home card-list toggle********/
 $(document).ready(function() {
