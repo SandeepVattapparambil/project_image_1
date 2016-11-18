@@ -124,3 +124,22 @@ $(document).ready(function() {
         side: 'right'
     });
 });
+/**********************************************/
+/*******Home card-list toggle********/
+$(document).ready(function() {
+    $('#view_list').click(function() {
+        //console.log('list clicked');
+        $('.card-view-item').fadeOut(function() {
+            $('.list-view-item').fadeIn();
+        });
+    });
+});
+$(document).ready(function() {
+    $('#view_module').click(function() {
+        //console.log('Cards clicked');
+        $('.list-view-item').fadeOut(function() {
+            $('.card-view-item').fadeIn();
+        });
+    });
+});
+/*************************************************/
