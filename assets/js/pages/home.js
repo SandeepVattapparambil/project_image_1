@@ -162,3 +162,4 @@ $(document).ready(function() {
       $(this).addClass('bot-bounce-vertical');
     })
 });
+/************************************************/
