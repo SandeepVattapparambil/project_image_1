@@ -456,11 +456,11 @@
 
     div>img.on-image {
         position: absolute;
-        top: 2px;
-        left: 2px;
+        top: 4px;
+        left: 4px;
         z-index: 1;
-        width: 25px;
-        height: 25px;
+        width: 35px;
+        height: 35px;
     }
     /*******************************************/
 
