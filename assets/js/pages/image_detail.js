@@ -82,6 +82,7 @@ function drop_comment(selector1, selector2) {
     }
 }
 /***********************************************************/
+/*************Color extract using Vibrant.js**********/
 var img = document.getElementById("prime_image");
 img.setAttribute('src', img.src);
 img.addEventListener('load', function() {
@@ -93,3 +94,4 @@ img.addEventListener('load', function() {
         }
     }
 });
+/******************************************************/
