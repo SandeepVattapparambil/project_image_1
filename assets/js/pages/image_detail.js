@@ -20,7 +20,7 @@ $(document).ready(function() {
         side: 'right'
     });
 });
-/********Bot*********/
+/********Bot element tooltip init*********/
 $(document).ready(function() {
     $('.bot-btn').tooltipster({
         animation: 'fade',
