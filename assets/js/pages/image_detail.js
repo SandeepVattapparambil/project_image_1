@@ -83,5 +83,5 @@ function drop_comment(selector1, selector2) {
 }
 /***********************************************************/
 $(document).ready(function() {
-    
+
 });
