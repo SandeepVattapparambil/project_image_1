@@ -345,51 +345,119 @@
                     <!--side cards col ends-->
                     <!--main cards col-->
                     <div id="pad-left-top" class="col s12 m12 l7">
-                        <div id="new" class="card hoverable">
-                            <div class="card-content">
-                                <div class="new valign-wrapper">
-                                    <img id="partial-pos" src="assets/images/profile.png" alt="" class="img-responsive circle" width="50" height="50">
-                                    <p class="valign">&nbsp;&nbsp;What's up today!...</p>
+                        <div id="sides-no-pad" class="col s12 m12 l12 list-view-item">
+                            <div id="img_post_card" class="card no_pad_img col s12 m4 l4 hoverable">
+                                <div class="card-image waves-effect waves-block waves-light image-activator">
+                                    <img class="img-responsive" src="assets/images/card-image.jpg">
                                 </div>
-                                <div class="right">
-                                    <a id="img_upload" href="javascript:void(0)" class="btn-floating waves-effect lime">
-                                        <i class="material-icons">photo_camera</i>
-                                    </a>
-                                    <a id="url_upload" href="javascript:void(0)" class="btn-floating waves-effect grey">
-                                        <i class="material-icons">photo_library</i>
-                                    </a>
-                                </div>
+                                <p class="overlay-text" style="display:none"><i class="material-icons">perm_media</i></p>
+                                <img id="partial-pos" src="assets/images/profile.png" alt="profile-img" class="img-responsive circle" width="50" height="50">
                             </div>
-                            <div id="dropzone_form" style="display:none">
-                                <div class="rule"></div>
-                                <div class="card-content">Drop your images here...
-                                    <form id="pulse_div" action="/file-upload" class="dropzone dz-clickable">
-                                        <div class="dz-default dz-message">
-                                            <span><img src="assets/images/upload.png" alt=""></span>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div id="no_pad_up_down" class="card-action">
-                                    <p id="no_marg_up_down" class="center-align grey-text"><a href="javascript:void(0)"><i class="material-icons">keyboard_arrow_up</i></a></p>
-                                </div>
-                            </div>
-
-                            <div id="url_form" style="display:none">
-                                <div class="rule"></div>
-                                <div class="card-content">
-                                    <div class="row">
-                                        <div id="pulse_input" class="input-field col s12">
-                                            <input id="url" type="text" class="validate">
-                                            <label for="text">Paste URL here</label>
-                                            <a class="lime waves-effect waves-light btn">Fetch</a>
+                            <div id="left-right-no-pad" class="col s12 m8 l8">
+                                <div id="height_set" class="card hoverable">
+                                    <div class="card-content">
+                                        <span class="truncate  grey-text text-darken-4">Sandeep
+                                        <a href="javascript:void(0)" class="right grey-text text-lighten">15sec ago
+                                          <i class="activator material-icons right">more_vert</i>
+                                          <i class="material-icons right">delete</i>
+                                        </a>
+                                        </span>
+                                    </div>
+                                    <div class="rule"></div>
+                                    <div class="card-content">Identify
+                                        <div class="chip lime lighten-3">Animal</div>
+                                        <div class="chip">Location</div>
+                                        <div class="card-content center">
+                                            <a class="waves-effect btn-flat btn-round lime lighten-3 lime-text text-darken-3"><i class="material-icons left">mode_edit</i>write</a>
                                         </div>
                                     </div>
-                                </div>
-                                <div id="no_pad_up_down" class="card-action">
-                                    <p id="no_marg_up_down1" class="center-align grey-text"><a href="javascript:void(0)"><i class="material-icons">keyboard_arrow_up</i></a></p>
+                                    <div class="card-action">
+                                        <a href="javascript:void(0)" class="lime-text text-darken-1 no_marg_right">
+                                            <i class="material-icons">thumb_up</i><span class="label_icon_spaced grey lighten-1 hvr-wobble-vertical">2</span></a>
+                                        <a href="javascript:void(0)" class="lime-text text-darken-1 no_marg_right">
+                                            <i class="material-icons">thumb_down</i><span class="label_icon_spaced grey lighten-1 hvr-wobble-vertical">2</span></a>
+                                        <a href="javascript:void(0)" class="lime-text text-darken-1 no_marg_right">
+                                            <i class="material-icons">hearing</i><span class="label_icon_spaced grey lighten-1 hvr-wobble-vertical">+7</span>
+                                        </a>
+                                        <a href="javascript:void(0)" class="lime-text text-darken-1 no_marg_right" onclick="drop_comment('#card_id', '#icon_id')">
+                                            <i id="icon_id" class="material-icons">comment</i><span class="label_icon grey lighten-1 hvr-wobble-vertical">2</span>
+                                        </a>
+
+                                        <div class="right hide-on-small-only">
+                                            <img class="circle follow_img_stack hvr-backward" src="assets/images/profile.png" width="35">
+                                            <img class="circle follow_img_stack hvr-backward" src="assets/images/yuna.jpg" width="35">
+                                            <img class="circle follow_img_stack hvr-backward" src="assets/images/profile2.png" width="35">
+                                            <span class="label lime hvr-wobble-horizontal">+ 7</span>
+                                        </div>
+                                    </div>
+                                    <div id="card_id" class="card-action lime lighten-5 hiden">
+                                        <div class="row valign-wrapper">
+                                            <div class="col s2 valign">
+                                                <img src="assets/images/profile.png" alt="" class="z-depth-1 circle" width="35">
+                                                <!-- notice the "circle" class -->
+                                            </div>
+                                            <div class="input-field col s10 valign">
+                                                <input placeholder="Comment here.." id="comment" type="text" class="validate">
+                                            </div>
+                                        </div>
+                                        <div class="row valign-wrapper">
+                                            <div class="col s2 valign">
+                                                <img src="assets/images/yuna.jpg" alt="" class="z-depth-1 circle" width="35">
+                                                <!-- notice the "circle" class -->
+                                            </div>
+                                            <div class="input-field col s10 valign">
+                                                <p>I think its a wild dog.</p>
+                                            </div>
+                                            <a href="javascript:void(0)" class="grey-text reply">
+                                                <i class="material-icons tiny">reply</i>
+                                            </a>
+                                            <a href="javascript:void(0)" class="grey-text">
+                                                <i class="material-icons tiny">thumb_up</i>
+                                            </a>
+                                            <a href="javascript:void(0)" class="grey-text">
+                                                <i class="material-icons tiny">thumb_down</i>
+                                            </a>
+                                        </div>
+                                        <div class="row valign-wrapper">
+                                            <div class="col s2 valign">
+                                                <img src="assets/images/profile3.jpg" alt="" class="z-depth-1 circle" width="35">
+                                                <!-- notice the "circle" class -->
+                                            </div>
+                                            <div class="input-field col s10 valign">
+                                                <p>Its a Fox!.</p>
+                                            </div>
+                                            <a href="javascript:void(0)" class="grey-text reply">
+                                                <i class="material-icons tiny">reply</i>
+                                            </a>
+                                            <a href="javascript:void(0)" class="grey-text">
+                                                <i class="material-icons tiny">thumb_up</i>
+                                            </a>
+                                            <a href="javascript:void(0)" class="grey-text">
+                                                <i class="material-icons tiny">thumb_down</i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card-reveal">
+                                        <span class="card-title reveal-title grey-text text-darken-4">Sandeep<i class="material-icons right">close</i></span>
+                                        <div>
+                                            asked to identify
+                                            <div class="chip lime lighten-3">Animal</div>
+                                            <div class="chip">Location</div>.
+                                        </div>
+                                        <div>
+                                            <span class="label_inline lime">+ 7</span>
+                                            <div class="text_inline">
+                                                others asked to identify
+                                                <div class="chip lime lighten-3">Animal</div>
+                                                <div class="chip lime lighten-3">Location</div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="grey-text text-darken-1"><i class="material-icons">insert_chart</i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                     <!--main cards col ends-->
 
