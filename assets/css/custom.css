@@ -564,3 +564,20 @@
         font-size: 12px;
     }
     /*******************************************************/
+
+    div.card.no_pad_img {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    div.col.s12.l-pad-n {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        div.col.s12.l-pad-n-mobile {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
