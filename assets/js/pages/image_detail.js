@@ -83,5 +83,16 @@ function drop_comment(selector1, selector2) {
 }
 /***********************************************************/
 $(document).ready(function() {
+    var img = document.createElement('img');
+    img.setAttribute('src', 'examples/octocat.png')
 
+    img.addEventListener('load', function() {
+        var vibrant = new Vibrant(img, 64, 5);
+        var swatches = vibrant.swatches();
+        for (var swatch in swatches) {
+            if (swatches.hasOwnProperty(swatch) && swatches[swatch]) {
+                console.log(swatch, swatches[swatch].getHex());
+            }
+        }
+    });
 });
