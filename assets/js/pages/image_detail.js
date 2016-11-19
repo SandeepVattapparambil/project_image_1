@@ -67,6 +67,7 @@ $(document).ready(function() {
         });
     });
 });
+
 function drop_comment(selector1, selector2) {
     var comment_card = $(selector1);
     var icon = $(selector2);
@@ -81,3 +82,6 @@ function drop_comment(selector1, selector2) {
     }
 }
 /***********************************************************/
+$(document).ready(function() {
+    
+});
