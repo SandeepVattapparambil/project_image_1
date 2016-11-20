@@ -16,8 +16,8 @@ $(document).ready(function() {
     $('.tooltip').tooltipster({
         animation: 'fade',
         delay: 200,
-        theme: 'tooltipster-punk',
-        side: 'right'
+        theme: 'tooltipster-borderless',
+        side: 'bottom'
     });
 });
 /********Bot element tooltip init*********/
@@ -112,8 +112,9 @@ function useColorExtract(color_array) {
     ///console.log(color_array);
     $.each(object, function(key, value) {
         //alert(key + ": " + value);
-        var content = '<div class="chip" style="background:'+value+'">'+value+'</div>'
+        var content = '<div class="chip" style="background:'+value+'">'+value+'</div>';
         $(parent).append(content);
+        $(parent).fadeIn();
         $('#color_btn').fadeOut();
     });
 }

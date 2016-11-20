@@ -359,9 +359,17 @@
                                         <img src="assets/images/profile.png" alt="profile-img" class="left img-responsive circle z-depth-1" width="25" height="25">
                                         <span class="grey-text text-darken-4">&nbsp;&nbsp;Sandeep</span>
                                         <span>
-                                        <a href="javascript:void(0)" class="right grey-text text-lighten">15sec ago
-                                          <i class="material-icons right">delete</i>
+
+                                        <a id="color_btn" href="javascript:void(0)" class="right grey-text text-lighten" onclick="colorExtract('prime_image')">
+                                          <i class="material-icons right tooltip" title="Get Image Colors">color_lens</i>
                                         </a>
+                                        <a id="exif_btn" href="javascript:void(0)" class="right grey-text text-lighten">
+                                          <i class="material-icons right tooltip" title="Get Exif Data from Image">insert_chart</i>
+                                        </a>
+                                        <a href="javascript:void(0)" class="right grey-text text-lighten">
+                                          <i class="material-icons right tooltip" title="Delete">delete</i>
+                                        </a>
+                                        <a href="javascript:void(0)" class="right grey-text text-lighten hide-on-small-only">15sec ago</a>
                                         </span>
                                     </div>
                                     <div class="rule"></div>
@@ -378,9 +386,7 @@
                                         <div class="chip lime lighten-3">Dog</div>
                                     </div>
                                     <div class="rule"></div>
-                                    <div id="image_data" class="card-content">
-                                        <a id="color_btn" class="waves-effect btn grey" onclick="colorExtract('prime_image')"><i class="left material-icons">color_lens</i>Get Colors</a>
-                                        <a id="exif_btn" class="waves-effect btn grey"><i class="left material-icons">insert_chart</i>Get EXIF</a>
+                                    <div id="image_data" class="card-content" style="display:none">
                                     </div>
                                     <div class="card-action">
                                         <a href="javascript:void(0)" class="lime-text text-darken-1 no_marg_right">
