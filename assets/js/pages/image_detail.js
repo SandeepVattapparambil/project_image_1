@@ -108,8 +108,11 @@ function colorExtract(image) {
 
 function useColorExtract(color_array) {
     var object = color_array;
+    var parent = $('#image_data');
     ///console.log(color_array);
     $.each(object, function(key, value) {
-        alert(key + ": " + value);
+        //alert(key + ": " + value);
+        var content = '<div class="chip">'+value+'</div>'
+        $(parent).append(content);
     });
 }
