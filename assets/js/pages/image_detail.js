@@ -108,6 +108,7 @@ function colorExtract(image) {
 
 function useColorExtract(color_array) {
     var object = color_array;
+    ///console.log(color_array);
     $.each(object, function(key, value) {
         alert(key + ": " + value);
     });
