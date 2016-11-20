@@ -163,3 +163,33 @@ $(document).ready(function() {
     })
 });
 /************************************************/
+/***********Home - card view action btn**************/
+$(document).ready(function(){
+  //Show text on view btn when mouse enter
+  $('.hover-expand-view').mouseenter(function(){
+    $(this).removeClass('btn-floating');
+    $(this).addClass('lime-text text-darken-3');
+    $(this).append('View Image');
+  });
+  //Reset view btn back to normal state
+  $('.hover-expand-view').mouseleave(function(){
+    $(this).addClass('btn-floating');
+    $(this).removeClass('lime-text text-darken-3');
+    $(this).text('');
+    $(this).html('<i class="material-icons left lime-text text-darken-3">input</i>');
+  });
+  //Show text on write btn on mouse enter
+  $('.hover-expand-write').mouseenter(function(){
+    $(this).removeClass('btn-floating');
+    $(this).addClass('lime-text text-darken-3');
+    $(this).append('Write !');
+  });
+  //Reset write btn back to normal state
+  $('.hover-expand-write').mouseleave(function(){
+    $(this).addClass('btn-floating');
+    $(this).removeClass('lime-text text-darken-3');
+    $(this).text('');
+    $(this).html('<i class="material-icons left lime-text text-darken-3">mode_edit</i>');
+  });
+});
+/*********************************************************/
