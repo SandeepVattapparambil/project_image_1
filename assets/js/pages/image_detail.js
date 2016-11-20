@@ -114,6 +114,7 @@ function useColorExtract(color_array) {
         //alert(key + ": " + value);
         var content = '<div class="chip white-text" style="background:' + value + '">' + value + '</div>';
         $(parent).append(content);
+        $('#rule_color').show();
         $(parent).fadeIn();
         $('#color_btn').fadeOut();
     });
@@ -128,6 +129,7 @@ function exifReader(image) {
         exif_array = EXIF.pretty(this);
         //console.log(exif_array);
         $(parent).append(exif_array);
+        $('#rule_exif').show();
         $(parent).fadeIn();
         $('#exif_btn').fadeOut();
     });
