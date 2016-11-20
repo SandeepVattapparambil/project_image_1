@@ -83,15 +83,23 @@ function drop_comment(selector1, selector2) {
 }
 /***********************************************************/
 /*************Color extract using Vibrant.js**********/
-var img = document.getElementById("prime_image");
-img.setAttribute('src', img.src);
-img.addEventListener('load', function() {
-    var vibrant = new Vibrant(img, 64, 5);
-    var swatches = vibrant.swatches();
-    for (var swatch in swatches) {
-        if (swatches.hasOwnProperty(swatch) && swatches[swatch]) {
-            console.log(swatch, swatches[swatch].getHex());
+function colorExtract(image) {
+    var i = 0;
+    var color_array = [];
+    var img = document.getElementById(image);
+    img.setAttribute('src', img.src);
+    img.addEventListener('load', function() {
+        var vibrant = new Vibrant(img, 64, 5);
+        var swatches = vibrant.swatches();
+        for (var swatch in swatches) {
+            if (swatches.hasOwnProperty(swatch) && swatches[swatch]) {
+                var color_name = swatch;
+                var color_hex = swatches[swatch].getHex();
+                console.log(swatch, swatches[swatch].getHex());
+                color_array[i] = color_hex;
+                i++;
+            }
         }
-    }
-});
-/******************************************************/
+        return color_array;
+    });
+}
