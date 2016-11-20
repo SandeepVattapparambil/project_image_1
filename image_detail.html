@@ -363,7 +363,7 @@
                                         <a id="color_btn" href="javascript:void(0)" class="right grey-text text-lighten" onclick="colorExtract('prime_image')">
                                           <i class="material-icons right tooltip" title="Get Image Colors">color_lens</i>
                                         </a>
-                                        <a id="exif_btn" href="javascript:void(0)" class="right grey-text text-lighten">
+                                        <a id="exif_btn" href="javascript:void(0)" class="right grey-text text-lighten" onclick="exifReader('prime_image')">
                                           <i class="material-icons right tooltip" title="Get Exif Data from Image">insert_chart</i>
                                         </a>
                                         <a href="javascript:void(0)" class="right grey-text text-lighten">
@@ -388,6 +388,9 @@
                                     <div class="rule"></div>
                                     <div id="image_data" class="card-content" style="display:none">
                                         Colors:
+                                    </div>
+                                    <div id="image_exif_data" class="card-content" style="display:none">
+
                                     </div>
                                     <div class="card-action">
                                         <a href="javascript:void(0)" class="lime-text text-darken-1 no_marg_right">

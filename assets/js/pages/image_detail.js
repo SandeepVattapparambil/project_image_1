@@ -112,9 +112,23 @@ function useColorExtract(color_array) {
     ///console.log(color_array);
     $.each(object, function(key, value) {
         //alert(key + ": " + value);
-        var content = '<div class="chip" style="background:'+value+'">'+value+'</div>';
+        var content = '<div class="chip white-text" style="background:' + value + '">' + value + '</div>';
         $(parent).append(content);
         $(parent).fadeIn();
         $('#color_btn').fadeOut();
+    });
+}
+
+function exifReader(image) {
+  var image = document.getElementById(image);
+  var exif_array = [];
+  var parent = $('#image_exif_data');
+    EXIF.getData(image, function() {
+        //alert(EXIF.pretty(this));
+        exif_array = EXIF.pretty(this);
+        //console.log(exif_array);
+        $(parent).append(exif_array);
+        $(parent).fadeIn();
+        $('#exif_btn').fadeOut();
     });
 }
