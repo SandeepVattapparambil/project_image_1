@@ -95,11 +95,20 @@ function colorExtract(image) {
             if (swatches.hasOwnProperty(swatch) && swatches[swatch]) {
                 var color_name = swatch;
                 var color_hex = swatches[swatch].getHex();
-                console.log(swatch, swatches[swatch].getHex());
+                //console.log(swatch, swatches[swatch].getHex());
                 color_array[i] = color_hex;
                 i++;
             }
         }
-        return color_array;
+        ///console.log(color_array);
+        useColorExtract(color_array);
+        //return color_array;
+    });
+}
+
+function useColorExtract(color_array) {
+    var object = color_array;
+    $.each(object, function(key, value) {
+        alert(key + ": " + value);
     });
 }
