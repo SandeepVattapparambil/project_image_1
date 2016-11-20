@@ -112,7 +112,8 @@ function useColorExtract(color_array) {
     ///console.log(color_array);
     $.each(object, function(key, value) {
         //alert(key + ": " + value);
-        var content = '<div class="chip">'+value+'</div>'
-        $(parent).append(content);
+        var content = '<div class="chip" style="background:'+value+'">'+value+'</div>'
+        $(parent).append(content).animate();
+        $('#color_btn').fadeOut();
     });
 }
