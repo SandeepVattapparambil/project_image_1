@@ -121,20 +121,22 @@ function useColorExtract(color_array) {
 }
 
 function exifReader(image) {
-  var image = document.getElementById(image);
-  var exif_array = [];
-  var parent = $('#image_exif_data');
+    var image = document.getElementById(image);
+    var exif_array = [];
+    var parent = $('#image_exif_data');
     EXIF.getData(image, function() {
-        //alert(EXIF.pretty(this));
         exif_array = EXIF.pretty(this);
-        //console.log(exif_array);
         $(parent).append(exif_array);
         $('#rule_exif').show();
         $(parent).fadeIn();
         $('#exif_btn').fadeOut();
+        split_string_regex(exif_array);
     });
 }
 
-function split_string_regex(string){
-var regex = /\w*\s*:\s*\d*/g;
+function split_string_regex(string) {
+    console.log(string);
+    var regex =/\w*\s:\s\d*/g;
+    var string_split = string.match(regex);
+    console.log(string_split);
 }
