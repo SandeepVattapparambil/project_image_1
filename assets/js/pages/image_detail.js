@@ -127,6 +127,7 @@ function exifReader(image) {
     var parent = $('#image_exif_data');
     EXIF.getData(image, function() {
         exif_array = EXIF.pretty(this);
+        //console.log(exif_array);
         var split_exif_array = split_string_regex(exif_array);
         $.each(split_exif_array, function(key, value){
           $('#rule_exif').show();
@@ -139,7 +140,7 @@ function exifReader(image) {
 }
 //Split string on Exif data pattern
 function split_string_regex(string) {
-    var regex =/\w*\s:\s\d*/g;
+    var regex =/\w*\s:\s.*/g;
     var string_split = string.match(regex);
     return string_split;
 }
