@@ -134,3 +134,7 @@ function exifReader(image) {
         $('#exif_btn').fadeOut();
     });
 }
+
+function split_string_regex(string){
+var regex = /\w*\s*:\s*\d*/g;
+}
