@@ -110,6 +110,7 @@ function useColorExtract(color_array) {
     var object = color_array;
     var parent = $('#image_data');
     ///console.log(color_array);
+    NProgress.start();
     $.each(object, function(key, value) {
         //alert(key + ": " + value);
         $('#rule_color').show();
@@ -118,6 +119,7 @@ function useColorExtract(color_array) {
         $(parent).append(content);
         $('#color_btn').fadeOut();
     });
+    NProgress.done();
 }
 
 //EXIF Data Reader
@@ -125,6 +127,7 @@ function exifReader(image) {
     var image = document.getElementById(image);
     var exif_array = [];
     var parent = $('#image_exif_data');
+    NProgress.start();
     EXIF.getData(image, function() {
         exif_array = EXIF.pretty(this);
         //console.log(exif_array);
@@ -137,6 +140,7 @@ function exifReader(image) {
           $('#exif_btn').fadeOut();
         })
     });
+    NProgress.done();
 }
 //Split string on Exif data pattern
 function split_string_regex(string) {
