@@ -153,3 +153,19 @@ function split_string_regex(string) {
 $(document).ready(function() {
     $('.chips').material_chip();
 });
+/************************************************/
+/*************Write answer card toggle****************/
+$(document).ready(function() {
+    $('#write_answer').click(function() {
+        $('#write_answer').addClass('animated zoomOut');
+        $('#answer_card').slideDown();
+        $('html, body').animate({
+            scrollTop: $("#answer_card").offset().top
+        }, 1000);
+    });
+    $('#answer_close').click(function() {
+        $('#answer_card').slideUp();
+        $('#write_answer').removeClass('zoomOut');
+        $('#write_answer').addClass('zoomIn');
+    })
+});
