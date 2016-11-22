@@ -3874,6 +3874,7 @@ $(document).ready(function(){
     });
   });
 
+//Edits added
   $.fn.material_chip = function (options) {
     var self = this;
     this.$el = $(this);

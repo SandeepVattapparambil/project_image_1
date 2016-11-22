@@ -149,6 +149,7 @@ function split_string_regex(string) {
     return string_split;
 }
 /****************************************************************/
-$(document).ready(function(){
-//
+/********add chips ad identifiactions*******/
+$(document).ready(function() {
+    $('.chips').material_chip();
 });

@@ -5506,8 +5506,8 @@ button.btn-floating {
 }
 
 .chips.focus {
-  border-bottom: 1px solid #26a69a;
-  box-shadow: 0 1px 0 0 #26a69a;
+  border-bottom: 1px solid #cddc39;/*#26a69a*/
+  box-shadow: 0 1px 0 0 #cddc39;/*#26a69a*/
 }
 
 .chips:hover {
@@ -5515,7 +5515,7 @@ button.btn-floating {
 }
 
 .chips .chip.selected {
-  background-color: #26a69a;
+  background-color: #cddc39;/*#26a69a*/
   color: #fff;
 }
 
