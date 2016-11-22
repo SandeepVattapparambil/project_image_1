@@ -345,7 +345,7 @@
                     <!--side cards col ends-->
                     <!--main cards col-->
                     <div class="col s12 m12 l7 l-pad-n-mobile">
-                        <div class="col s12 m12 l12 list-view-item l-pad-n-mobile">
+                        <div class="col s12 m12 l12 l-pad-n-mobile">
                             <div class="card no_pad_img col s12 m6 l6 hoverable">
                                 <div class="card-image waves-effect waves-block waves-light image-activator">
                                     <img id="prime_image" class="img-responsive" src="assets/images/profile1.jpg">
@@ -464,11 +464,34 @@
                             </div>
                         </div>
 
-                        <div id="answer_btn_box" class="center">
-                          <br />
-                            <a class="waves-effect btn btn-round lime grey-text text-darken-1"><i class="material-icons left">mode_edit</i>Write</a>
+                        <div id="answer_btn_box" class="center row">
+                            <a id="write_answer" class="waves-effect btn btn-round lime grey-text text-darken-1">
+                                <i class="material-icons left">mode_edit</i>Write
+                            </a>
                         </div>
-                        <br />
+
+                        <div class="col s12 m12 l12 l-pad-n-mobile">
+                            <div class="card">
+                                <div class="card-content grey-text">
+                                  <img src="assets/images/profile.png" alt="profile-img" class="left img-responsive circle z-depth-1" width="25" height="25">
+                                  <span class="grey-text text-darken-4">&nbsp;&nbsp;Sandeep</span>
+                                  &nbsp;identified the image as:
+                                  <span>
+                                  <a id="answer_close" href="javascript:void(0)" class="right grey-text text-lighten">
+                                    <i class="material-icons right tooltip" title="Close">close</i>
+                                  </a>
+                                </span>
+                                </div>
+                                <div class="rule"></div>
+                                <div class="card-content">
+                                  <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#">This is a link</a>
+                                    <a href="#">This is a link</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <!--main cards col ends-->
 

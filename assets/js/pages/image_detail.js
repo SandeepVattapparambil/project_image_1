@@ -132,19 +132,23 @@ function exifReader(image) {
         exif_array = EXIF.pretty(this);
         //console.log(exif_array);
         var split_exif_array = split_string_regex(exif_array);
-        $.each(split_exif_array, function(key, value){
-          $('#rule_exif').show();
-          $(parent).fadeIn();
-          var content = '<div class="chip lime lighten-3 grey-text text-darken-2">'+value+'</div>';
-          $(parent).append(content);
-          $('#exif_btn').fadeOut();
+        $.each(split_exif_array, function(key, value) {
+            $('#rule_exif').show();
+            $(parent).fadeIn();
+            var content = '<div class="chip lime lighten-3 grey-text text-darken-2">' + value + '</div>';
+            $(parent).append(content);
+            $('#exif_btn').fadeOut();
         })
     });
     NProgress.done();
 }
 //Split string on Exif data pattern
 function split_string_regex(string) {
-    var regex =/\w*\s:\s.*/g;
+    var regex = /\w*\s:\s.*/g;
     var string_split = string.match(regex);
     return string_split;
 }
+/****************************************************************/
+$(document).ready(function(){
+//
+});
