@@ -160,7 +160,7 @@ $(document).ready(function() {
         $('#write_answer').addClass('animated zoomOut');
         $('#answer_card').slideDown();
         $('html, body').animate({
-            scrollTop: $("#answer_card").offset().top
+            scrollTop: $("#answer_card").offset().top - 60
         }, 1000);
     });
     $('#answer_close').click(function() {
