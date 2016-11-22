@@ -169,3 +169,28 @@ $(document).ready(function() {
         $('#write_answer').addClass('zoomIn');
     })
 });
+/********************************************************/
+$(document).ready(function() {
+    //Show text on view btn when mouse enter
+    $('.hover-expand-view').mouseenter(function() {
+        $(this).removeClass('btn-floating');
+        $(this).addClass('lime-text text-darken-3');
+        $(this).append('Add Notes');
+    });
+    //Reset view btn back to normal state
+    $('.hover-expand-view').mouseleave(function() {
+        $(this).addClass('btn-floating');
+        $(this).removeClass('lime-text text-darken-3');
+        $(this).text('');
+        $(this).html('<i class="material-icons left lime-text text-darken-3">add</i>');
+    });
+    $('.hover-expand-view').click(function() {
+        $('.hover-expand-view').hide();
+        $('#notes, #notes_btn').show();
+    });
+    $('#note_close').click(function() {
+        $('#notes, #notes_btn').hide();
+        $('.hover-expand-view').fadeIn();
+    });
+});
+/*****************************************************/
