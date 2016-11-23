@@ -196,14 +196,15 @@ $(document).ready(function() {
 /*****************************************************/
 /*************Chip endorse****************/
 $(document).ready(function() {
-    var icon_up = '<i class="material-icons icon_btn up">add_circle</i>';
-    var icon_down = '<i class="material-icons icon_btn down">remove_circle</i>';
+    var icon_up = $('.up');
+    var icon_down = $('.down');
+    var endorse = '<span class="lime darken-3 label_endorse">1</span>';
     $('.up').click(function() {
-        var endorse = '&nbsp;<span class="lime darken-3 label_endorse animated zoomIn">' + 1 + '</span>';
-        var parent = $(this).parent();
-        $(this).remove();
-        $(parent).append(icon_down);
-        $(parent).append(endorse);
+        $(icon_up).hide(function() {
+            $(icon_down).show(function() {
+                $(icon_down).after(endorse);
+            });
+        });
     });
 });
 /*********************************************/
