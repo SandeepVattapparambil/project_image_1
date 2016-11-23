@@ -206,5 +206,11 @@ $(document).ready(function() {
             });
         });
     });
+    $('.down').click(function() {
+        $('.label_endorse').remove();
+        $(icon_down).hide(function() {
+            $(icon_up).show();
+        });
+    });
 });
 /*********************************************/
