@@ -194,10 +194,16 @@ $(document).ready(function() {
     });
 });
 /*****************************************************/
+/*************Chip endorse****************/
 $(document).ready(function() {
-    $('.click').click(function() {
-        $('.click').html('remove_circle');
-        $('.click').addClass('animated zoomIn');
-        $('.click').after('&nbsp;<span class="lime darken-3 label_endorse">1</span>')
+    var icon_up = '<i class="material-icons icon_btn up">add_circle</i>';
+    var icon_down = '<i class="material-icons icon_btn down">remove_circle</i>';
+    $('.up').click(function() {
+        var endorse = '&nbsp;<span class="lime darken-3 label_endorse animated zoomIn">' + 1 + '</span>';
+        var parent = $(this).parent();
+        $(this).remove();
+        $(parent).append(icon_down);
+        $(parent).append(endorse);
     });
 });
+/*********************************************/
