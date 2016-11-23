@@ -194,3 +194,10 @@ $(document).ready(function() {
     });
 });
 /*****************************************************/
+$(document).ready(function() {
+    $('.click').click(function() {
+        $('.click').html('remove_circle');
+        $('.click').addClass('animated zoomIn');
+        $('.click').after('&nbsp;<span class="lime darken-3 label_endorse">1</span>')
+    });
+});
