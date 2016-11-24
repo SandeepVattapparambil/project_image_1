@@ -608,4 +608,8 @@
         color: #fff;
         border-radius: 10px;
     }
+
+    .endorse {
+        cursor: pointer;
+    }
     /***********************************/
