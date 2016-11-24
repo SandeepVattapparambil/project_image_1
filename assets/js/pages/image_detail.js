@@ -195,7 +195,7 @@ $(document).ready(function() {
 });
 /*****************************************************/
 /*************Chip endorse****************/
-/*$(document).ready(function() {
+$(document).ready(function() {
     var icon_up = $('.up');
     var icon_down = $('.down');
     var endorse = '<span class="lime darken-3 label_endorse">1</span>';
@@ -212,18 +212,5 @@ $(document).ready(function() {
             $(icon_up).show();
         });
     });
-});*/
+});
 /*********************************************/
-$(document).ready(function(){
-  if($('.label_endorse').html() == '' || $('.label_endorse').html() == 0){
-    $('.label_endorse').hide();
-  }
-  else{
-    $('.label_endorse').show();
-  }
-});
-$(document).ready(function() {
-    $('.endorse').click(function(e) {
-
-    });
-});
