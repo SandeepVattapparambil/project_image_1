@@ -617,6 +617,7 @@
     @media only screen and (min-width: 601px) {
     div.card.no_pad_img.m-on-l.col.s2.hoverable {
             margin-left: 10px;
+            margin-bottom: 5px;
         }
     }
     @media only screen and (max-width: 600px) {
