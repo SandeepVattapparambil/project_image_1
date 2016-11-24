@@ -615,13 +615,31 @@
     /***********************************/
 
     @media only screen and (min-width: 601px) {
-    div.card.no_pad_img.m-on-l.col.s2.hoverable {
+        div.card.no_pad_img.m-on-l.col.s2.hoverable {
             margin-left: 10px;
             margin-bottom: 5px;
         }
     }
+
     @media only screen and (max-width: 600px) {
-    div.card.no_pad_img.m-on-l.col.s2.hoverable {
+        div.card.no_pad_img.m-on-l.col.s2.hoverable {
             margin-right: 10px;
         }
     }
+    /********************************************/
+    /************Ads cards*****************/
+
+    @media only screen and (min-width: 993px) {
+        div.col.s12.m12.l2.l-pad-n-mobile>div.l-r-no-pad {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        div.col.s12.m12.l2.l-pad-n-mobile>div.l-r-no-pad {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+    /**********************************************/
