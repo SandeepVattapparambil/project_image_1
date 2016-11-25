@@ -377,7 +377,7 @@
                             </div>
                             <div class="no_pad_img center btn-center m-on-l col s2">
                                 <a class="btn-floating waves-effect lime tooltip" title="Add more images">
-                                  <i class="material-icons">add</i></a>
+                                    <i class="material-icons">add</i></a>
                             </div>
                         </div>
 
@@ -417,10 +417,16 @@
                                     <div id="rule_color" class="rule" style="display:none"></div>
                                     <div id="image_data" class="card-content" style="display:none">
                                         Colors:
+                                        <a id="close_colors" href="javascript:void(0)" class="btn-floating btn-flat waves-effect lime lighten-3 grey-text text-darken-2">
+                                          <i class="material-icons">keyboard_arrow_up</i>
+                                        </a>
                                     </div>
                                     <div id="rule_exif" class="rule" style="display:none"></div>
                                     <div id="image_exif_data" class="card-content" style="display:none">
                                         Exif Data:
+                                        <a id="close_exif" href="javascript:void(0)" class="btn-floating btn-flat waves-effect lime lighten-3 grey-text text-darken-2">
+                                          <i class="material-icons">keyboard_arrow_up</i>
+                                        </a>
                                     </div>
                                     <div class="card-action">
                                         <a href="javascript:void(0)" class="lime-text text-darken-1 no_marg_right">
@@ -656,6 +662,18 @@
                                     <span class="">Similar Images</span>
                                     <span class="drop_more grey-text text-darken-2">
                                       <i class="rotate_icon material-icons right">more_vert</i></span>
+                                </div>
+                                <div class="card-content select-suggestion" style="display:none">
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <select>
+                                                  <option value="1">10</option>
+                                                  <option value="2">30</option>
+                                                  <option value="3">50 ></option>
+                                                </select>
+                                            <label>Number of Suggestions</label>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="card">

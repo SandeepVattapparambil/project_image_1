@@ -116,7 +116,7 @@ function useColorExtract(color_array) {
         $('#rule_color').show();
         $(parent).fadeIn();
         var content = '<div class="chip white-text" style="background:' + value + '">' + value + '</div>';
-        $(parent).append(content);
+        $('#close_colors').before(content);
         $('#color_btn').fadeOut();
     });
     NProgress.done();
@@ -136,9 +136,9 @@ function exifReader(image) {
             $('#rule_exif').show();
             $(parent).fadeIn();
             var content = '<div class="chip lime lighten-3 grey-text text-darken-2">' + value + '</div>';
-            $(parent).append(content);
+            $('#close_exif').before(content);
             $('#exif_btn').fadeOut();
-        })
+        });
     });
     NProgress.done();
 }
@@ -149,6 +149,11 @@ function split_string_regex(string) {
     return string_split;
 }
 /****************************************************************/
+$(document).ready(function() {
+    $('#close_exif').click(function() {
+        
+    });
+});
 /********add chips ad identifiactions*******/
 $(document).ready(function() {
     $('.chips').material_chip();
@@ -216,6 +221,8 @@ $(document).ready(function() {
 /*********************************************/
 $(document).ready(function() {
     $('.drop_more').click(function() {
-        $('.rotate_icon').addClass('rotate');
+        $('.rotate_icon').toggleClass('rotate');
+        $('.select-suggestion').slideToggle();
     });
 });
+/***********************************************/
