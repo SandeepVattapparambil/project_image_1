@@ -150,8 +150,11 @@ function split_string_regex(string) {
 }
 /****************************************************************/
 $(document).ready(function() {
-    $('#close_exif').click(function() {
-        
+    $('#close_colors').click(function() {
+        $('#image_data, #rule_color').slideUp();
+    });
+    $('#close_exif').click(function(){
+      $('#image_exif_data, #rule_exif').slideUp();
     });
 });
 /********add chips ad identifiactions*******/
