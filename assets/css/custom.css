@@ -673,3 +673,20 @@
     div.no_pad_img.center.btn-center.m-on-l.col.s2 {
         margin-top: 5%;
     }
+    /*******************************************/
+
+    .drop_more {
+        cursor: pointer;
+    }
+
+    .rotate {
+        /* Safari */
+        -webkit-transform: rotate(-90deg);
+        /* Firefox */
+        -moz-transform: rotate(-90deg);
+        /* IE */
+        -ms-transform: rotate(-90deg);
+        /* Opera */
+        -o-transform: rotate(-90deg);
+        transition: all 300ms;
+    }

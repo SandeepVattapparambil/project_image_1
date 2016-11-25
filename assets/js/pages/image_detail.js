@@ -214,3 +214,8 @@ $(document).ready(function() {
     });
 });
 /*********************************************/
+$(document).ready(function() {
+    $('.drop_more').click(function() {
+        $('.rotate_icon').addClass('rotate');
+    });
+});
