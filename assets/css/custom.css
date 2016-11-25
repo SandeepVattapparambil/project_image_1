@@ -668,3 +668,8 @@
         border-radius: 5px;
         border: 3px solid #fff;
     }
+    /********************************************/
+
+    div.no_pad_img.center.btn-center.m-on-l.col.s2 {
+        margin-top: 5%;
+    }
