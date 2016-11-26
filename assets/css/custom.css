@@ -690,3 +690,8 @@
         -o-transform: rotate(-90deg);
         transition: all 300ms;
     }
+    /*************************************************/
+    .collection .collection-item:hover{
+      background-color: #f0f4c3;
+      color: #afb42b;
+    }
