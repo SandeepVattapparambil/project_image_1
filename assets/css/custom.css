@@ -691,7 +691,20 @@
         transition: all 300ms;
     }
     /*************************************************/
-    .collection .collection-item:hover{
-      background-color: #f0f4c3;
-      color: #afb42b;
+
+    .collection .collection-item:hover {
+        background-color: #f0f4c3;
+        color: #afb42b;
+    }
+    /**********************************************/
+
+    div.card-action.center>a.card_foot {
+        font-size: 13px;
+        font-style: normal;
+        text-decoration: none;
+        text-transform: lowercase;
+    }
+
+    #no_decoration {
+        text-transform: none;
     }
