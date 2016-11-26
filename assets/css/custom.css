@@ -708,3 +708,7 @@
     #no_decoration {
         text-transform: none;
     }
+
+    p.small_text {
+        font-size: 11px;
+    }
