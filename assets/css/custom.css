@@ -717,3 +717,9 @@
     div.card-content>span.card-title.n-marg-d {
         margin-bottom: 0px;
     }
+    /*******************************************/
+
+    div.col.s12.hide-on-large-only.no-pad-l-r {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
