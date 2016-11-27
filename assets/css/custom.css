@@ -713,6 +713,7 @@
         font-size: 11px;
     }
     /******************************************/
-    div.card-content > span.card-title.n-marg-d{
-  margin-bottom: 0px;
+
+    div.card-content>span.card-title.n-marg-d {
+        margin-bottom: 0px;
     }
