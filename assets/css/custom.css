@@ -704,6 +704,12 @@
         text-decoration: none;
         text-transform: lowercase;
     }
+     .card > div.card-action.lime.lighten-5>a.card_foot {
+        font-size: 13px;
+        font-style: normal;
+        text-decoration: none;
+        text-transform: none;
+    }
 
     #no_decoration {
         text-transform: none;
