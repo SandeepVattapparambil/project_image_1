@@ -706,10 +706,10 @@
     }
 
     .card>div.card-action.grey.lighten-4>a.card_foot {
-      font-size: 13px;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
+        font-size: 13px;
+        font-style: normal;
+        text-decoration: none;
+        text-transform: none;
     }
 
     #no_decoration {
@@ -731,3 +731,7 @@
         padding-right: 0px;
     }
     /***********************************************/
+
+    div.col.s12.m3>div.card>div.card-content.valign-wrapper.n-marg-d {
+        padding-bottom: 0px;
+    }
