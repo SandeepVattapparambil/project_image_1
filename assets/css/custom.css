@@ -732,6 +732,12 @@
     }
     /***********************************************/
 
-    div.col.s12.m3>div.card>div.card-content.valign-wrapper.n-marg-d {
+    div.col.s12.m3>div.card>div.card-content.n-marg-d {
         padding-bottom: 0px;
+    }
+    /**************************************************/
+    .follow-text{
+      cursor: pointer;
+      position: relative;
+      top: -35px;
     }
