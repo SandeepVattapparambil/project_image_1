@@ -771,4 +771,16 @@
     div.valign-wrapper>ul.user-follow-item>li.followers {
         font-size: 12px;
     }
+
+    div.valign-wrapper>ul.user-follow-item.left-marg {
+        margin-left: 20px;
+    }
     /******************************************************/
+    
+    .chip .icon {
+        cursor: pointer;
+        float: right;
+        font-size: 16px;
+        line-height: 32px;
+        padding-left: 8px;
+    }
