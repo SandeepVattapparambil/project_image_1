@@ -22,6 +22,7 @@ gulp.task('watch', ['browser-sync'], function() {
     gulp.watch('assets/css/*', reload);
     // Watch JS files
     gulp.watch('assets/js/*', reload);
+    gulp.watch('assets/js/pages/*', reload);
     // Watch image files
     gulp.watch('assets/images/*', reload);
 });
