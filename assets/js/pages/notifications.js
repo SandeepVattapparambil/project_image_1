@@ -23,4 +23,10 @@ $(document).ready(function() {
         theme: 'tooltipster-borderless',
         side: 'left'
     });
+    //
+    $(window).scroll(function() {
+        if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+            alert("bottom!");
+        }
+    });
 });
