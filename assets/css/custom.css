@@ -797,3 +797,8 @@
     .small-mobile {
         font-size: 1.3rem;
     }
+
+    .new-noti {
+        border-radius: 5px;
+        border-left: 3px solid #cddc39;
+    }
