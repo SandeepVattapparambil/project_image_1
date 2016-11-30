@@ -27,12 +27,13 @@ $(document).ready(function() {
     $(window).scroll(function() {
         if ($(window).scrollTop() + $(window).height() == $(document).height()) {
             //alert("bottom!");
-            $('.bottom-card').show(function(){
-              $('.bottom-card-progress').show().delay(2000);
-              $('.bottom-card-progress').fadeOut(function(){
-                $('.bottom-card-icon').fadeIn();
-              });
+            $('.bottom-card').show(function() {
+                $('.bottom-card-progress').show().delay(2000);
+                $('.bottom-card-progress').fadeOut(function() {
+                    $('.bottom-card-icon').fadeIn();
+                });
             });
         }
     });
+    
 });
