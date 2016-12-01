@@ -42,6 +42,7 @@ $(document).ready(function() {
     element.on("tap", function(ev) {
         //console.log(ev.type + " gesture detected.");
         $('#swipe-to').removeClass('new-noti');
+        $('#swipe-to').append(`<a class="grey-text"><i class="material-icons right small-mobile">done</i></a>`);
     });
     element.on("press", function(ev) {
         $('#press_noti').slideDown();
@@ -62,6 +63,7 @@ $(document).ready(function() {
           $(selector).slideUp(function(){
             $(selector).remove();
           });
+          Materialize.toast('Notification deleted !', 4000);
         }, 900);
     }
 });
