@@ -49,10 +49,17 @@ $(document).ready(function() {
     element.on("swipeleft", function(ev) {
         //console.log(ev.type + " gesture detected.");
         $('#swipe-to').addClass('animated fadeOutLeft');
-
+        remove_element('#swipe-to');
     });
     element.on("swiperight", function(ev) {
         //console.log(ev.type + " gesture detected.");
         $('#swipe-to').addClass('animated fadeOutRight');
+        remove_element('#swipe-to');
     });
+    //function to remove element
+    function remove_element(selector) {
+        setTimeout(function() {
+            $(selector).remove();
+        }, 900);
+    }
 });
