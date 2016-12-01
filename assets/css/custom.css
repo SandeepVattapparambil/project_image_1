@@ -802,3 +802,7 @@
         border-radius: 5px;
         border-left: 3px solid #cddc39;
     }
+
+    .bordered {
+        border: solid 1px #cddc39;
+    }

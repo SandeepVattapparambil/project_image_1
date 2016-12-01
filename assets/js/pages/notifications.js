@@ -35,5 +35,16 @@ $(document).ready(function() {
             });
         }
     });
-    
+
+    //Hammer touch on notification item for mobile only
+    var notification_item = document.getElementById('swipe-to');
+    var element = new Hammer(notification_item);
+    element.on("tap", function(ev) {
+        console.log(ev.type + " gesture detected.");
+        $('#swipe-to').removeClass('new-noti');
+    });
+    element.on("press", function(ev) {
+        console.log(ev.type + " gesture detected.");
+        $('#notification_header').after(`<div class="card-content center lime lighten-3 bordered">Swipe to delete</div>`);
+    });
 });

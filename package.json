@@ -2,7 +2,7 @@
   "name": "alpha",
   "version": "1.0.0",
   "description": "Material Design Template",
-  "main": "index.js",
+  "main": "home.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,7 +15,6 @@
   "license": "ISC",
   "dependencies": {
     "hover.css": "^2.0.2",
-    "jquery-touchswipe": "^1.6.15",
     "mdi": "^1.7.22",
     "nprogress": "^0.2.0",
     "roboto-fontface": "^0.6.0",
