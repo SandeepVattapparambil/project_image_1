@@ -42,7 +42,7 @@ $(document).ready(function() {
     element.on("tap", function(ev) {
         //console.log(ev.type + " gesture detected.");
         $('#swipe-to').removeClass('new-noti');
-        $('#swipe-to').append(`<a class="grey-text"><i class="material-icons right small-mobile">done</i></a>`);
+        $('.done').fadeIn();
     });
     element.on("press", function(ev) {
         $('#press_noti').slideDown();
@@ -66,4 +66,20 @@ $(document).ready(function() {
           Materialize.toast('Notification deleted !', 4000);
         }, 900);
     }
+    //Notifications desktop
+    $('#click-to').click(function(){
+      $('#click-to').removeClass('new-noti');
+      $('.done').fadeIn();
+    });
+    //delete notification on desktop
+    $('.delete').click(function(){
+      var div = $(this).closest('div');
+      var rule = $('#rule1')
+      //$(div).addClass('animated fadeOut');
+      $(div).slideUp(function(){
+        $(div).remove();
+        $(rule).remove();
+        Materialize.toast('<i class="material-icons left">delete</i> Notification deleted !', 4000);
+      });
+    });
 });
