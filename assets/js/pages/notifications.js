@@ -59,7 +59,9 @@ $(document).ready(function() {
     //function to remove element
     function remove_element(selector) {
         setTimeout(function() {
+          $(selector).slideUp(function(){
             $(selector).remove();
+          });
         }, 900);
     }
 });
