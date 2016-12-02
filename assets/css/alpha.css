@@ -2726,7 +2726,7 @@ input.expand-search[type=text]:focus:not([readonly]), input.expand-search[type=p
 }
 
 .tabs .indicator {
-    background-color: #26a69a;
+    background-color: #cddc39; /*originally #26a69a*/
 }
 
 
