@@ -882,3 +882,7 @@
         padding-bottom: 0px;
     }
     /**************************************************/
+
+    div.row.no-m-t.no-m-b > div.l-no-pad {
+        padding-left: 0px;
+    }
