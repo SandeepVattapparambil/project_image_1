@@ -9,7 +9,7 @@ $(document).ready(function() {
     $('.tooltip').tooltipster({
         animation: 'fade',
         delay: 200,
-        theme: 'tooltipster-punk',
+        theme: 'tooltipster-borderless',
         side: 'right'
     });
     //Tooltip normal style
@@ -19,5 +19,5 @@ $(document).ready(function() {
         theme: 'tooltipster-borderless',
         side: 'left'
     });
-    
+
 });

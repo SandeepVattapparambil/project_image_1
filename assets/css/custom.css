@@ -825,9 +825,10 @@
         font-size: 30px;
         font-weight: 200;
     }
+
     span.label_verified {
         position: relative;
-        top:-2px;
+        top: -2px;
         width: 10px;
         height: 10px;
         padding-top: 5px;
@@ -837,19 +838,47 @@
         font-size: 0.8rem;
         border-radius: 10px;
     }
-    .profile-tags{
-      font-size: 15px;
-      font-weight: 300;
+
+    span.label_verified_tiny {
+        cursor: pointer;
+        position: relative;
+        top: -2px;
+        width: 10px;
+        height: 10px;
+        padding-top: 5px;
+        padding-bottom: 1px;
+        padding-left: 2px;
+        padding-right: 1px;
+        font-weight: 300;
+        font-size: 0.3rem;
+        border-radius: 10px;
     }
-    .profile-meta{
-      font-size: 15px;
-      font-weight: 300;
+
+    span.label_verified_tiny i {
+        font-size: .6rem;
+        color: #fff;
     }
-    div.col.s12.left-right-no-padding{
-      padding-left: 0px;
-      padding-right: 0px;
+
+    .profile-tags {
+        font-size: 15px;
+        font-weight: 300;
     }
-    .tabs .tab a{
-      text-transform: none;
+
+    .profile-meta {
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    div.col.s12.left-right-no-padding {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .tabs .tab a {
+        text-transform: none;
+    }
+
+    div.card>div.card-content.n-marg-d {
+        padding-bottom: 0px;
     }
     /**************************************************/
