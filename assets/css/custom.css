@@ -869,6 +869,12 @@
         font-weight: 300;
     }
 
+    .is-following .chip{
+      height: 22px;
+      font-size: 12px;
+      line-height: 22px;
+    }
+
     div.col.s12.left-right-no-padding {
         padding-left: 0px;
         padding-right: 0px;
@@ -883,6 +889,6 @@
     }
     /**************************************************/
 
-    div.row.no-m-t.no-m-b > div.l-no-pad {
+    div.row.no-m-t.no-m-b>div.l-no-pad {
         padding-left: 0px;
     }
