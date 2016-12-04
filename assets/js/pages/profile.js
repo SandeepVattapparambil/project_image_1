@@ -19,8 +19,6 @@ $(document).ready(function() {
         theme: 'tooltipster-borderless',
         side: 'left'
     });
-
-
     //Sparkline graphs
     var DrawSparkline = function() {
         var linePoints = [0, 1, 3, 2, 1, 1, 4, 1, 2, 0, 3, 1, 3, 4, 1, 0, 2, 3, 6, 3, 4, 2, 7, 5, 2, 4, 1, 2, 6, 13, 4, 2];

@@ -262,6 +262,20 @@
         border: 2px solid #fff;
     }
 
+    span.label_status_followers {
+        position: relative;
+        width: 15px;
+        height: 15px;
+        top: 39px;
+        left: -9px;
+        padding-left: 4px;
+        padding-right: 2px;
+        background-color: #fff;
+        color: #fff;
+        border-radius: 8px;
+        border: 2px solid #fff;
+    }
+
     span.label_inline {
         position: relative;
         width: 10px;
@@ -869,10 +883,14 @@
         font-weight: 300;
     }
 
-    .is-following .chip{
-      height: 22px;
-      font-size: 12px;
-      line-height: 22px;
+    .is-following .chip {
+        height: 22px;
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    div.hide-on-small-only>ul.follower-topics-images {
+        margin-left: 5px;
     }
 
     div.col.s12.left-right-no-padding {
@@ -886,6 +904,23 @@
 
     div.card>div.card-content.n-marg-d {
         padding-bottom: 0px;
+    }
+
+    .slim-text {
+        font-size: 11px;
+        font-weight: 400;
+    }
+
+    div.thumbs {
+        width: 30px;
+        height: 30px;
+        overflow: hidden;
+        border-radius: 5px;
+        display: inline-block;
+    }
+
+    div.thumbs img {
+        height: 100%;
     }
     /**************************************************/
 

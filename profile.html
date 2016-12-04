@@ -167,7 +167,6 @@
                             </li>
                         </li>
                     </ul>
-
                 </div>
             </nav>
         </header>
@@ -387,7 +386,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col s12 left-right-no-padding">
+                            <div id="profile_header" class="col s12 left-right-no-padding">
                                 <ul class="tabs">
                                     <li class="tab col s3">
                                         <a class="active lime-text text-darken-2" href="#profile-tab">Summary</a></li>
@@ -483,123 +482,61 @@
                             </div>
                             <div class="rule"></div>
                             <div class="card-content center">
-                              <a class="waves-effect btn-flat lime tooltip" title="View more on analytics!">
-                                <i class="material-icons left">insert_chart</i>Go to Analytics</a>
+                                <a class="waves-effect btn-flat lime tooltip" title="View more on analytics!">
+                                    <i class="material-icons left">insert_chart</i>Go to Analytics</a>
                             </div>
                         </div>
                         <div id="followers-tab">
-                          <div class="card col s12 l-pad-n">
-                            <div class="card-content grey-text">
-                              <div class="valign-wrapper">
-                                  <img src="assets/images/yuna.jpg" alt="identifier" class="rounded responsive-img valign z-depth-1" width="80" height="80">
-                                  <span class="label_status lime"></span>
-                                  <ul class="user-follow-item">
-                                      <li class="user-name">
-                                          <span class="blue-text text-darken-3">Rita
+                            <div class="card col s12 l-pad-n">
+                                <div class="card-content grey-text">
+                                    <div class="valign-wrapper">
+                                        <img src="assets/images/yuna.jpg" alt="identifier" class="rounded responsive-img valign z-depth-1" width="80" height="80">
+                                        <span class="label_status_followers lime tooltip" title="Online"></span>
+                                        <ul class="user-follow-item">
+                                            <li class="user-name">
+                                                <span class="blue-text text-darken-3">Rita
                                       <span class="label_verified_tiny blue tooltip" title="Verified">
                                         <i class="material-icons tiny">done</i>
                                       </span>
-                                          </span>
-                                      </li>
-                                      <li class="full-name"><span class="grey-text text-darken-1">Rita Johns</span></li>
-                                      <li class="followers"><span class="grey-text text-darken-1">132 Followers</span></li>
-                                      <li class="is-following"><div class="chip lighten-3">Follows you</div></li>
-                                  </ul>
-                                  <div class="hide-on-small-only">
-                                    <div class="chip lighten-3">Topic1</div>
-                                    <div class="chip lighten-3">Topic2</div>
-                                    <div class="chip lighten-3">Topic3</div>
-                                    <div class="chip lighten-3">Topic4</div>
-                                    <div class="chip lighten-3">...</div>
-                                  </div>
-                              </div>
-                              <span class="follow-text lime-text right">Follow</span>
+                                                </span>
+                                            </li>
+                                            <li class="full-name"><span class="grey-text text-darken-1">Rita Johns</span></li>
+                                            <li class="followers"><span class="grey-text text-darken-1">132 Followers</span></li>
+                                            <li class="is-following">
+                                                <div class="chip lighten-3">Follows you</div>
+                                            </li>
+                                        </ul>
+                                        <div class="hide-on-small-only">
+                                            <ul class="follower-topics-images">
+                                                <li class="is-following">
+                                                    <span class="slim-text">following:</span>
+                                                    <div class="chip lighten-3">Topic1</div>
+                                                    <div class="chip lighten-3">Topic2</div>
+                                                    <div class="chip lighten-3">Topic3</div>
+                                                    <div class="chip lighten-3">Topic4</div>
+                                                    <div class="chip lighten-3">...</div>
+                                                </li>
+                                                <li>
+                                                    <div class="thumbs">
+                                                        <img src="assets/images/card-image.jpg">
+                                                    </div>
+                                                    <div class="thumbs">
+                                                        <img src="assets/images/card-image2.jpg">
+                                                    </div>
+                                                    <div class="thumbs">
+                                                        <img src="assets/images/card-image3.jpg">
+                                                    </div>
+                                                    <div class="thumbs">
+                                                        <img src="assets/images/card-image4.jpg">
+                                                    </div>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                    <span class="follow-text lime-text right">Follow</span>
+                                </div>
                             </div>
-                          </div>
-                          <div class="card col s12 l-pad-n">
-                            <div class="card-content grey-text">
-                              <div class="valign-wrapper">
-                                  <img src="assets/images/yuna.jpg" alt="identifier" class="rounded responsive-img valign z-depth-1" width="80" height="80">
-                                  <span class="label_status lime"></span>
-                                  <ul class="user-follow-item">
-                                      <li class="user-name">
-                                          <span class="blue-text text-darken-3">Rita
-                                      <span class="label_verified_tiny blue tooltip" title="Verified">
-                                        <i class="material-icons tiny">done</i>
-                                      </span>
-                                          </span>
-                                      </li>
-                                      <li class="full-name"><span class="grey-text text-darken-1">Rita Johns</span></li>
-                                      <li class="followers"><span class="grey-text text-darken-1">132 Followers</span></li>
-                                      <li class="is-following"><div class="chip lighten-3">Follows you</div></li>
-                                  </ul>
-                                  <div class="hide-on-small-only">
-                                    <div class="chip lighten-3">Topic1</div>
-                                    <div class="chip lighten-3">Topic2</div>
-                                    <div class="chip lighten-3">Topic3</div>
-                                    <div class="chip lighten-3">Topic4</div>
-                                    <div class="chip lighten-3">...</div>
-                                  </div>
-                              </div>
-                              <span class="follow-text grey-text right">Following</span>
-                            </div>
-                          </div>
-                          <div class="card col s12 l-pad-n">
-                            <div class="card-content grey-text">
-                              <div class="valign-wrapper">
-                                  <img src="assets/images/yuna.jpg" alt="identifier" class="rounded responsive-img valign z-depth-1" width="80" height="80">
-                                  <span class="label_status lime"></span>
-                                  <ul class="user-follow-item">
-                                      <li class="user-name">
-                                          <span class="blue-text text-darken-3">Rita
-                                      <span class="label_verified_tiny blue tooltip" title="Verified">
-                                        <i class="material-icons tiny">done</i>
-                                      </span>
-                                          </span>
-                                      </li>
-                                      <li class="full-name"><span class="grey-text text-darken-1">Rita Johns</span></li>
-                                      <li class="followers"><span class="grey-text text-darken-1">132 Followers</span></li>
-                                      <li class="is-following"><div class="chip lighten-3">Follows you</div></li>
-                                  </ul>
-                                  <div class="hide-on-small-only">
-                                    <div class="chip lighten-3">Topic1</div>
-                                    <div class="chip lighten-3">Topic2</div>
-                                    <div class="chip lighten-3">Topic3</div>
-                                    <div class="chip lighten-3">Topic4</div>
-                                    <div class="chip lighten-3">...</div>
-                                  </div>
-                              </div>
-                              <span class="follow-text lime-text right">Follow</span>
-                            </div>
-                          </div>
-                          <div class="card col s12 l-pad-n">
-                            <div class="card-content grey-text">
-                              <div class="valign-wrapper">
-                                  <img src="assets/images/yuna.jpg" alt="identifier" class="rounded responsive-img valign z-depth-1" width="80" height="80">
-                                  <span class="label_status lime"></span>
-                                  <ul class="user-follow-item">
-                                      <li class="user-name">
-                                          <span class="blue-text text-darken-3">Rita
-                                      <span class="label_verified_tiny blue tooltip" title="Verified">
-                                        <i class="material-icons tiny">done</i>
-                                      </span>
-                                          </span>
-                                      </li>
-                                      <li class="full-name"><span class="grey-text text-darken-1">Rita Johns</span></li>
-                                      <li class="followers"><span class="grey-text text-darken-1">132 Followers</span></li>
-                                      <li class="is-following"><div class="chip lighten-3">Follows you</div></li>
-                                  </ul>
-                                  <div class="hide-on-small-only">
-                                    <div class="chip lighten-3">Topic1</div>
-                                    <div class="chip lighten-3">Topic2</div>
-                                    <div class="chip lighten-3">Topic3</div>
-                                    <div class="chip lighten-3">Topic4</div>
-                                    <div class="chip lighten-3">...</div>
-                                  </div>
-                              </div>
-                              <span class="follow-text lime-text right">Follow</span>
-                            </div>
-                          </div>
                         </div>
                     </div>
                     <!--main cards col ends-->
