@@ -143,10 +143,21 @@
         z-index: 9;
         cursor: pointer;
     }
+    .overlay-text-top {
+        position: absolute;
+        right: 5px;
+        bottom: -5px;
+        left: 3px;
+        font-size: 10px;
+        color: #fff;
+        z-index: 9;
+        cursor: pointer;
+    }
 
     .overlay-text i {
         font-size: 18px;
     }
+
     /*********************************************************/
 
     .rule {
@@ -924,4 +935,25 @@
 
     div.row.no-m-t.no-m-b>div.l-no-pad {
         padding-left: 0px;
+    }
+
+    .chip-small {
+        display: inline-block;
+        height: 18px;
+        font-size: 11px;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.6);
+        line-height: 20px;
+        padding: 0 12px;
+        border-radius: 16px;
+        background-color: #e4e4e4;
+        margin-bottom: 5px;
+        margin-right: 5px;
+    }
+    .chip-small img {
+        float: left;
+        margin: 0 8px 0 -12px;
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
     }
