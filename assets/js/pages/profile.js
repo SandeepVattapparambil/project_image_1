@@ -49,6 +49,6 @@ $(document).ready(function() {
     });
     //Image card multiple indicator icon
     $('.image-activator').hover(function() {
-        $(this).parent().find('p').toggle('fast');
+        $(this).parent().find('p').fadeToggle();
     });
 });
