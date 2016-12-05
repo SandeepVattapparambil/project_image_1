@@ -47,4 +47,8 @@ $(document).ready(function() {
             DrawSparkline();
         }, 300);
     });
+    //Image card multiple indicator icon
+    $('.image-activator').hover(function() {
+        $(this).parent().find('p').toggle('fast');
+    });
 });
