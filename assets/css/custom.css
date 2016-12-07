@@ -67,10 +67,6 @@
         margin-left: 8px;
     }
 
-    .bg-header {
-        background-image: url(../images/search_image.jpg);
-    }
-
     a.pos_with_image {
         line-height: 4;
     }
