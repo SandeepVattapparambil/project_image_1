@@ -80,8 +80,13 @@
     a.slim-text {
         font-weight: 300;
     }
-    div.sidebar-rule{
-      background-color: #bed200;
+
+    div.sidebar-rule {
+        background-color: #bed200;
+    }
+
+    nav .nav-wrapper ul li span.badge.alpha-black {
+        background-color: rgba(0, 0, 0, 0.33);
     }
     /***************************************************/
 
