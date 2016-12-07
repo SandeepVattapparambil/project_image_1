@@ -72,8 +72,13 @@
         height: 60px;
         margin-left: 65px;
     }
-    li.sidenav-pro-pic>a{
-      height: 80px;
+
+    li.sidenav-pro-pic>a {
+        height: 80px;
+    }
+
+    a.slim-text {
+        font-weight: 300;
     }
     /***************************************************/
 
