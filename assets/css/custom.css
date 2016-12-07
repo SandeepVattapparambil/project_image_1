@@ -80,6 +80,9 @@
     a.slim-text {
         font-weight: 300;
     }
+    div.sidebar-rule{
+      background-color: #bed200;
+    }
     /***************************************************/
 
     .collection .collection-item.avatar .rounded {
