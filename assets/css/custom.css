@@ -88,6 +88,11 @@
     nav .nav-wrapper ul li span.badge.alpha-black {
         background-color: rgba(0, 0, 0, 0.33);
     }
+
+    .side-nav li.active {
+        background-color: rgba(0, 0, 0, 0.05);
+        border-left: 4px solid #fff;
+    }
     /***************************************************/
 
     .collection .collection-item.avatar .rounded {
