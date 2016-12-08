@@ -82,7 +82,7 @@
     }
 
     div.sidebar-rule {
-        background-color: #bed200;
+        background-color:rgba(131, 139, 36, 0.21);
     }
 
     nav .nav-wrapper ul li span.badge.alpha-black {
@@ -103,6 +103,12 @@
     }
     .side-nav a.email{
       font-weight:300;
+    }
+    nav .nav-wrapper ul li span.badge {
+      top:15px;
+    }
+    .gradient{
+      background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(205, 220, 57)), to(rgb(192, 202, 51)));
     }
     /***************************************************/
 
