@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Title -->
+    <title>Yimage | Template</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#cddc39" />
+    <meta name="description" content="Responsive Admin Dashboard Template" />
+    <meta name="keywords" content="admin,dashboard" />
+    <meta name="author" content="Yimage" />
+
+    <!-- Styles -->
+    <link type="text/css" rel="stylesheet" href="assets/css/materialize.css" />
+    <link href="assets/css/icone91f.css" rel="stylesheet">
+    <link href="assets/css/materialdesignicons.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/metrojs/MetroJs.min.css" rel="stylesheet">
+    <link href="assets/plugins/weather-icons-master/css/weather-icons.min.css" rel="stylesheet">
+    <link href="assets/css/nprogress.css" rel="stylesheet">
+    <link href="assets/plugins/dropzone/dropzone.min.css" rel="stylesheet">
+    <link href="assets/plugins/dropzone/basic.min.css" rel="stylesheet">
+    <link href="assets/css/hover.css" rel="stylesheet" media="all" type="text/css">
+    <link href="assets/css/fakeLoader.css" rel="stylesheet" media="all" type="text/css">
+    <link href="assets/css/animate.css" rel="stylesheet" media="all" type="text/css">
+    <link href="assets/css/tooltipster.bundle.css" rel="stylesheet" media="all" type="text/css">
+    <link href="assets/css/themes/tooltipster-sideTip-punk.min.css" rel="stylesheet" media="all" type="text/css">
+    <link href="assets/css/themes/tooltipster-sideTip-borderless.min.css" rel="stylesheet" media="all" type="text/css">
+
+    <!-- Theme Styles -->
+    <link href="assets/css/alpha.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="http://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+</head>
+
+<body>
+    <div class="device-loader"></div>
+    <div class="mn-content fixed-sidebar">
+        <header class="mn-header navbar-fixed">
+            <nav class="lime">
+                <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+                <div class="nav-wrapper row">
+                    <div class="header-title col s3 m3">
+                        <span class="chapter-title">Yimage</span>
+                    </div>
+                    <form class="left search col s6 hide-on-small-and-down">
+                        <div class="input-field">
+                            <input id="search" type="search" placeholder="Search" autocomplete="off">
+                            <label for="search"><i class="material-icons search-icon">search</i></label>
+                        </div>
+                        <a href="javascript: void(0)" class="close-search"><i class="material-icons">close</i></a>
+                    </form>
+                    <ul class="right col s9 m3 nav-right-menu">
+                        <li>
+                            <a href="javascript:void(0)" data-activates="chat-sidebar" class="chat-button show-on-large">
+                                <i class="material-icons">more_vert</i>
+                            </a>
+                        </li>
+                        <li class="hide-on-med-and-down">
+                            <a href="javascript:void(0)" data-activates="dropdown2" class="dropdown-button dropdown-right show-on-large">
+                                <div class="sidebar-profile-image">
+                                    <img src="assets/images/profile.png" class="circle z-depth-1" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="hide-on-med-and-down">
+                            <a href="javascript:void(0)" data-activates="dropdown1" class="dropdown-button dropdown-right show-on-large hvr-buzz-out">
+                                <i class="material-icons">notifications_none</i>
+                                <span class="badge grey">4</span>
+                            </a>
+                        </li>
+                        <li class="hide-on-med-and-up">
+                            <a href="javascript:void(0)" class="search-toggle">
+                                <i class="material-icons">search</i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="side-nav" id="slide-out">
+                        <li class="bg-header">
+                            <div class="valign-wrapper">
+                                <img id="profile" src="assets/images/profile.png" class="circle z-depth-1 valign" alt="">
+                                <a class="waves-effect valign pos_with_image">Sandeep</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="divider"></div>
+                        </li>
+                        <li><a class="waves-effect" href=""><i class="material-icons grey-text text-darken-3">person_pin</i>Profile</a></li>
+                        <li><a class="waves-effect" href=""><i class="material-icons">notifications_none</i><span class="badge">4</span>Notifications</a></li>
+                        <li><a class="waves-effect" href=""><i class="material-icons grey-text text-darken-3">message</i><span class="badge">8</span>Messages</a></li>
+                        <li>
+                            <div class="divider"></div>
+                        </li>
+                        <li><a class="waves-effect" href=""><i class="material-icons grey-text text-darken-3">settings</i>Settings</a></li>
+                        <li><a class="waves-effect" href=""><i class="material-icons grey-text text-darken-3">settings_power</i>Logout</a></li>
+                    </ul>
+                    <ul id="dropdown1" class="dropdown-content notifications-dropdown">
+                        <li class="notificatoins-dropdown-container">
+                            <ul>
+                                <li class="notification-drop-title">Today</li>
+                                <li>
+                                    <a href="#!">
+                                        <div class="notification">
+                                            <div class="notification-icon circle cyan"><i class="material-icons">done</i></div>
+                                            <div class="notification-text">
+                                                <p><b>Alan Grey</b> uploaded new theme</p><span>7 min ago</span></div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!">
+                                        <div class="notification">
+                                            <div class="notification-icon circle deep-purple"><i class="material-icons">cached</i></div>
+                                            <div class="notification-text">
+                                                <p><b>Tom</b> updated status</p><span>14 min ago</span></div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="notification-drop-title">Yestarday</li>
+                                <li>
+                                    <a href="#!">
+                                        <div class="notification">
+                                            <div class="notification-icon circle green"><i class="material-icons">security</i></div>
+                                            <div class="notification-text">
+                                                <p>Security issues fixed</p><span>16 hrs ago</span></div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!">
+                                        <div class="notification">
+                                            <div class="notification-icon circle indigo"><i class="material-icons">file_download</i></div>
+                                            <div class="notification-text">
+                                                <p>Finished downloading files</p><span>22 hrs ago</span></div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul id="dropdown2" class="dropdown-content notifications-dropdown">
+                        <li class="notificatoins-dropdown-container">
+                            <li class="waves-effect">
+                                <a href="#!">
+                                    <i class="material-icons grey-text text-darken-3">person_pin</i>Sandeep Vattapparambil</a>
+                            </li>
+                            <li class="waves-effect">
+                                <a href="#!"><i class="material-icons grey-text text-darken-3">perm_identity</i>Profile</a>
+                            </li>
+                            <li class="waves-effect">
+                                <a href="#!"><i class="material-icons grey-text text-darken-3">settings_applications</i>Settings</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li class="waves-effect">
+                                <a href="#!"><i class="material-icons grey-text text-darken-3">power_settings_new</i>Logout</a>
+                            </li>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </header>
+
+        <aside id="chat-sidebar" class="side-nav white">
+            <div class="side-nav-wrapper">
+                <div class="col s12">
+                    <ul class="tabs tab-demo" style="width: 100%;">
+                        <li class="tab col s3"><a href="#sidebar-chat-tab" class="active">chat</a></li>
+                        <li class="tab col s3"><a href="#sidebar-more-tab">settings</a></li>
+                    </ul>
+                </div>
+                <div id="sidebar-chat-tab" class="col s12 sidebar-messages right-sidebar-panel">
+                    <p class="right-sidebar-heading">CHAT LIST</p>
+                    <div class="chat-list">
+                        <a href="javascript:void(0)" class="chat-message">
+                            <div class="chat-item">
+                                <div class="chat-item-image">
+                                    <img src="assets/images/profile-image.png" class="circle" alt="">
+                                </div>
+                                <div class="chat-item-info">
+                                    <p class="chat-name">John Doe</p>
+                                    <span class="chat-message">Hello</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)" class="chat-message">
+                            <div class="chat-item">
+                                <div class="chat-item-image">
+                                    <img src="assets/images/profile-image-1.png" class="circle" alt="">
+                                </div>
+                                <div class="chat-item-info">
+                                    <p class="chat-name">Tom Simpson</p>
+                                    <span class="chat-message">How are you?</span>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="chat-sidebar-options">
+                        <a href="#" class="left"><i class="material-icons">edit</i></a>
+                        <a href="#" class="right"><i class="material-icons">settings</i></a>
+                    </div>
+                </div>
+                <div id="sidebar-more-tab" class="col s12 sidebar-more right-sidebar-panel">
+                    <p class="right-sidebar-heading">SYSTEM</p>
+                    <div class="settings-list">
+                        <div class="setting-item">
+                            <div class="setting-text">Notifications</div>
+                            <div class="setting-set">
+                                <div class="switch">
+                                    <label>
+                                            <input type="checkbox" checked>
+                                            <span class="lever"></span>
+                                        </label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p class="right-sidebar-heading">ACCOUNT</p>
+                    <div class="settings-list">
+                        <div class="setting-item">
+                            <div class="setting-text">Offline Mode</div>
+                            <div class="setting-set">
+                                <div class="switch">
+                                    <label>
+                                            <input type="checkbox">
+                                            <span class="lever"></span>
+                                        </label>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <aside id="chat-messages" class="side-nav white">
+            <p class="sidebar-chat-name">Tom Simpson<a href="#" data-activates="chat-messages" class="chat-message-link"><i class="material-icons">keyboard_arrow_right</i></a></p>
+            <div class="messages-container">
+                <div class="message-wrapper them">
+                    <div class="circle-wrapper"><img src="assets/images/profile-image-1.png" class="circle" alt=""></div>
+                    <div class="text-wrapper">Lorem Ipsum</div>
+                </div>
+                <div class="message-wrapper me">
+                    <div class="circle-wrapper"><img src="assets/images/profile-image-3.jpg" class="circle" alt=""></div>
+                    <div class="text-wrapper">Integer in faucibus diam?</div>
+                </div>
+                <div class="message-wrapper them">
+                    <div class="circle-wrapper"><img src="assets/images/profile-image-1.png" class="circle" alt=""></div>
+                    <div class="text-wrapper">Vivamus quis neque volutpat, hendrerit justo vitae, suscipit dui</div>
+                </div>
+                <div class="message-wrapper me">
+                    <div class="circle-wrapper"><img src="assets/images/profile-image-3.jpg" class="circle" alt=""></div>
+                    <div class="text-wrapper">Suspendisse condimentum tortor et lorem pretium</div>
+                </div>
+
+            </div>
+            <div class="message-compose-box">
+                <div class="input-field">
+                    <input placeholder="Write message" id="message_compose" type="text">
+                </div>
+            </div>
+        </aside>
+
+        <main class="mn-inner inner-active-sidebar">
+            <div class="middle-content">
+                <div class="row no-m-t no-m-b">
+                    <!--side cards col-->
+                    <div class="col s12 m12 l3 hide-on-med-and-down">
+                        <ul class="collapsible" data-collapsible="accordion">
+                            <li>
+                                <div class="collapsible-header grey lighten-2"><i class="material-icons">favorite</i>Favourites</div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+                                <div class="collapsible-body">
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+                                <div class="collapsible-body">
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+                                <div class="collapsible-body">
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="collection">
+                            <li>
+                                <div class="collapsible-header grey lighten-2">
+                                    <i class="material-icons">trending_up</i>Trending</div>
+                            </li>
+                            <li class="collection-item avatar">
+                                <img src="assets/images/card-image.jpg" alt="" class="rounded">
+                                <span class="title">Title</span>
+                                <p>First Line</p>
+                            </li>
+                            <li class="collection-item avatar">
+                                <img src="assets/images/card-image.jpg" alt="" class="rounded">
+                                <span class="title">Title</span>
+                                <p>First Line</p>
+                            </li>
+                            <li class="collection-item avatar">
+                                <img src="assets/images/card-image.jpg" alt="" class="rounded">
+                                <span class="title">Title</span>
+                                <p>First Line</p>
+                            </li>
+                        </ul>
+                        <div class="card">
+                            <div class="card-content grey lighten-3">
+                                <a href="#" class="foot">© 2016 •</a>
+                                <a href="#" class="foot">Sitemap&nbsp;•</a>
+                                <a href="#" class="foot">About&nbsp;•</a>
+                                <a href="#" class="foot">Help&nbsp;•</a>
+                                <a href="#" class="foot">Terms&nbsp;•</a>
+                                <a href="#" class="foot">Priavcy&nbsp;•</a>
+                                <a href="#" class="foot">Cookies&nbsp;•</a>
+                                <a href="#" class="foot">Apps&nbsp;•</a>
+                                <a href="#" class="foot">Careers&nbsp;•</a>
+                                <a href="#" class="foot">Status&nbsp;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--side cards col ends-->
+                    <!--main cards col-->
+                    <div id="pad-left-top" class="col s12 m12 l7">
+                        <div id="new" class="card hoverable">
+                            <div class="card-content">
+                                <div class="new valign-wrapper">
+                                    <img id="partial-pos" src="assets/images/profile.png" alt="" class="img-responsive circle" width="50" height="50">
+                                    <p class="valign">&nbsp;&nbsp;What's up today!...</p>
+                                </div>
+                                <div class="right">
+                                    <a id="img_upload" href="javascript:void(0)" class="btn-floating waves-effect lime">
+                                        <i class="material-icons">photo_camera</i>
+                                    </a>
+                                    <a id="url_upload" href="javascript:void(0)" class="btn-floating waves-effect grey">
+                                        <i class="material-icons">photo_library</i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="dropzone_form" style="display:none">
+                                <div class="rule"></div>
+                                <div class="card-content">Drop your images here...
+                                    <form id="pulse_div" action="/file-upload" class="dropzone dz-clickable">
+                                        <div class="dz-default dz-message">
+                                            <span><img src="assets/images/upload.png" alt=""></span>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div id="no_pad_up_down" class="card-action">
+                                    <p id="no_marg_up_down" class="center-align grey-text"><a href="javascript:void(0)"><i class="material-icons">keyboard_arrow_up</i></a></p>
+                                </div>
+                            </div>
+
+                            <div id="url_form" style="display:none">
+                                <div class="rule"></div>
+                                <div class="card-content">
+                                    <div class="row">
+                                        <div id="pulse_input" class="input-field col s12">
+                                            <input id="url" type="text" class="validate">
+                                            <label for="text">Paste URL here</label>
+                                            <a class="lime waves-effect waves-light btn">Fetch</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="no_pad_up_down" class="card-action">
+                                    <p id="no_marg_up_down1" class="center-align grey-text"><a href="javascript:void(0)"><i class="material-icons">keyboard_arrow_up</i></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--main cards col ends-->
+
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- FAB button-->
+    <div class="fixed-action-btn vertical click-to-toggle bot">
+        <a id="bot" class="btn-floating grey bot-btn" title="Hey ! I am boty. I am here to help you.">
+            <i class="material-icons">album</i>
+        </a>
+    </div>
+    <!-- FAB button ends-->
+    <!-- FAB button-->
+    <div class="fixed-action-btn vertical click-to-toggle">
+        <a class="btn-floating btn-large lime">
+            <i class="material-icons">menu</i>
+        </a>
+        <ul>
+            <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+            <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+            <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+            <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+        </ul>
+    </div>
+    <!-- FAB button ends-->
+
+    <!-- Javascripts -->
+    <!-- jQuery -->
+    <script src="assets/plugins/jquery/jquery-2.2.0.min.js"></script>
+    <!-- NProgress Slim Loader -->
+    <script src="assets/js/nprogress.js"></script>
+    <script src="assets/js/nprogress_config.js"></script>
+    <!-- Materialize jQuery library-->
+    <script src="assets/plugins/materialize/js/materialize.js"></script>
+    <!-- jQuery blockui -->
+    <script src="assets/plugins/jquery-blockui/jquery.blockui.js"></script>
+    <!-- dropzone -->
+    <script src="assets/plugins/dropzone/dropzone.min.js"></script>
+    <!-- PulsateJs -->
+    <script src="assets/js/jquery.pulsate.js"></script>
+    <!-- Tooltipster -->
+    <script src="assets/js/tooltipster.bundle.js"></script>
+
+    <!-- Main App -->
+    <script src="assets/js/alpha.js"></script>
+    <!-- Page Code -->
+    <script src="assets/js/pages/home.js"></script>
+
+</body>
+
+</html>
