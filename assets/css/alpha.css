@@ -1363,15 +1363,17 @@ nav .nav-wrapper ul li span.badge {
 
 .side-nav {
     padding: 0!important;
-    height: calc(100% - 60px)!important;
-    margin-top: 60px;
+    /*Original  calc(100% - 60px)!important*/
+    height: 100%;
+    /*margin-top: 60px;*/
     z-index: 997;
     width: 220px;
 }
 
-#sidenav-overlay {
+/*Hidden originally*/
+/*#sidenav-overlay {
     display: none;
-}
+}*/
 
 .sidebar-menu {
     padding-top: 15px!important;
