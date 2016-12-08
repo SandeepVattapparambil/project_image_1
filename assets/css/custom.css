@@ -93,6 +93,17 @@
         background-color: rgba(0, 0, 0, 0.05);
         border-left: 4px solid #fff;
     }
+
+    .side-nav a {
+        font-weight: 400;
+    }
+
+    .side-nav a.name {
+        font-weight: 500;
+    }
+    .side-nav a.email{
+      font-weight:300;
+    }
     /***************************************************/
 
     .collection .collection-item.avatar .rounded {
