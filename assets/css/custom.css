@@ -1222,3 +1222,12 @@ div.card>div.card-content>div>img.left-marg {
 .messages-container {
   padding: 0px;
 }
+.message-wrapper {
+  padding-bottom: 20px;
+}
+.timestamp{
+  position: relative;
+  font-size: 10px;
+  top:45px;
+  left:-100px;
+}
