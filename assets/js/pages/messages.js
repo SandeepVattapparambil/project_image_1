@@ -23,4 +23,8 @@ $(document).ready(function() {
         theme: 'tooltipster-borderless',
         side: 'left'
     });
+    //Conversation
+    $('#converse1').click(function(){
+      $('#converse').fadeIn();
+    })
 });
