@@ -24,10 +24,32 @@ $(document).ready(function() {
         side: 'left'
     });
     //Conversation
-    $('#converse1').click(function(){
-      $('#converse').fadeIn();
+    $('#converse1').click(function() {
+        $('#converse').fadeIn();
     });
-    $('#group1').click(function(){
-      $('#converse-group').fadeIn();
+    $('#group1').click(function() {
+        $('#converse-group').fadeIn();
     });
+    //Function to detect mobile
+    function getDeviceType() {
+        if (navigator.userAgent.match(/Android/i)) {
+            var device = 'Android';
+            return device;
+        } else if (navigator.userAgent.match(/BlackBerry/i)) {
+            var device = 'Blackberry';
+            return device;
+        } else if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
+            var device = 'iOS';
+            return device;
+        } else if (navigator.userAgent.match(/Opera Mini/i)) {
+            var device = 'Opera';
+            return device;
+        } else if (navigator.userAgent.match(/IEMobile/i)) {
+            var device = 'Windows';
+            return device;
+        } else {
+            var device = '';
+            return device;
+        }
+    }
 });
