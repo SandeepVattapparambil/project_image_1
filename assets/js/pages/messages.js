@@ -26,5 +26,8 @@ $(document).ready(function() {
     //Conversation
     $('#converse1').click(function(){
       $('#converse').fadeIn();
-    })
+    });
+    $('#group1').click(function(){
+      $('#converse-group').fadeIn();
+    });
 });
