@@ -292,6 +292,18 @@ span.label-text-inline {
     border: 3px solid #fff;
 }
 
+span.label-msg-noti {
+    position: relative;
+    left: -15px;
+    top: -17px;
+    padding: 6px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 0.6rem;
+    color: #fff;
+    border-radius: 50px;
+}
+
 span.label_icon {
     position: relative;
     top: -22px;
@@ -1175,19 +1187,31 @@ div.col.s12.m4>div.card-panel>div.row>div.message-search {
 }
 
 .message-search input::-webkit-input-placeholder {
-    color: #d4e157 ;
+    color: #d4e157;
 }
 
 .message-search input:-moz-placeholder {
     /* Firefox 18- */
-    color: #d4e157 ;
+    color: #d4e157;
 }
 
 .message-search input::-moz-placeholder {
     /* Firefox 19+ */
-    color: #d4e157 ;
+    color: #d4e157;
 }
 
 .message-search input:-ms-input-placeholder {
-    color: #d4e157 ;
+    color: #d4e157;
+}
+
+.n-pad-bottom {
+    padding-bottom: 1px;
+}
+
+div.card>div.card-content>div>img.left-marg {
+    margin-left: 5px;
+}
+
+.light-text{
+  font-weight:400;
 }
