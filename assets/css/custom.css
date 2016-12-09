@@ -1249,6 +1249,21 @@ div.card>div.card-content>div>img.left-marg {
     position: relative;
     top: 3px;
 }
+
 .message-wrapper.them .text-wrapper:before {
     border-color: transparent #d4e157 transparent transparent;
+}
+
+.online {
+    border: 3px solid #d4e157;
+}
+@media only screen and (max-width: 600px) {
+    div.col.s12.m4.l-r-no-pad {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    div.col.s12.m7.l-r-no-pad {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }
