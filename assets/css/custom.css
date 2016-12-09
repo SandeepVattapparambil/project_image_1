@@ -1219,3 +1219,6 @@ div.card>div.card-content>div>img.left-marg {
 .msg-group {
     padding: 4px;
 }
+.messages-container {
+  padding: 0px;
+}
