@@ -1215,3 +1215,7 @@ div.card>div.card-content>div>img.left-marg {
 .light-text{
   font-weight:400;
 }
+
+.msg-group{
+  padding: 4px;
+}
