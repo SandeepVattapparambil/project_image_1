@@ -25,10 +25,24 @@ $(document).ready(function() {
     });
     //Conversation
     $('#converse1').click(function() {
-        $('#converse').fadeIn();
+        var device = getDeviceType();
+        if (device != '') {
+            $('#ctrl_bar').slideUp();
+            $('#converse').fadeIn();
+        } else {
+            console.log('Desktop');
+            $('#converse').fadeIn();
+        }
     });
     $('#group1').click(function() {
-        $('#converse-group').fadeIn();
+        var device = getDeviceType();
+        if (device != '') {
+            $('#ctrl_bar').slideUp();
+            $('#converse-group').fadeIn();
+        } else {
+            console.log('Desktop');
+            $('#converse-group').fadeIn();
+        }
     });
     //Function to detect mobile
     function getDeviceType() {
