@@ -1165,7 +1165,7 @@ div.row.no-m-t.no-m-b>div.l-no-pad {
 
 /***Messages***/
 
-div.col.s12.m4>div.card-panel>div.row>div.message-search {
+div.col.s12.m8>div.card-panel>div.row>div.message-search {
     border-radius: 50px;
     padding-left: 25px;
     padding-right: 25px;
@@ -1267,10 +1267,4 @@ div.card>div.card-content>div>img.left-marg {
         padding-left: 0px;
         padding-right: 0px;
     }
-}
-
-.sticky {
-    position: fixed;
-    bottom: 0;
-    width: calc(100% - 50px;)
 }

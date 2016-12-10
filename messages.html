@@ -224,7 +224,10 @@
             <div class="middle-content">
                 <div class="row no-m-t no-m-b">
                     <!--side cards col-->
-                    <div id="ctrl_bar" class="col s12 m4 l-r-no-pad">
+                    <!--side cards col ends-->
+
+                    <!--main cards col-->
+                    <div class="col s12 m8 offset-m2 l-r-no-pad">
                         <div class="card-panel lime n-pad-bottom">
                             <div class="row">
                                 <div class="message-search lime darken-1 col s12">
@@ -247,7 +250,8 @@
                             </div>
                         </div>
                         <a class="waves-effect waves-lime btn-flat"><i class="material-icons left">email</i>Messages</a>
-                        <div id="converse1" class="card">
+                        <!-- Modal Trigger -->
+                        <div class="card modal-trigger" data-target="modal1">
                             <ul class="collection">
                                 <li class="collection-item avatar">
                                     <img src="assets/images/yuna.jpg" alt="" class="circle z-depth-1 online">
@@ -274,7 +278,8 @@
                             </ul>
                         </div>
                         <a class="waves-effect waves-lime btn-flat"><i class="material-icons left">group_work</i>Groups</a>
-                        <div id="group1" class="card">
+                        <!-- Modal Trigger -->
+                        <div class="card modal-trigger" data-target="modal2">
                             <ul class="collection">
                                 <li class="collection-item avatar">
                                     <img src="assets/images/groupchat.png" alt="" class="circle z-depth-1">
@@ -293,148 +298,150 @@
                                 </div>
                             </ul>
                         </div>
-                    </div>
-                    <!--side cards col ends-->
-                    <!--main cards col-->
-                    <div class="col s12 m7 l-r-no-pad">
-                        <div id="converse" class="row" style="display:none">
-                            <ul class="collection">
-                                <li class="collection-item avatar">
-                                    <img src="assets/images/yuna.jpg" alt="" class="circle z-depth-1 online">
-                                    <span class="title">Rita Johns</span>
-                                    <p class="light-text grey-text">Online</p>
-                                    <a href="#!" class="secondary-content grey-text">
-                                        <i class="material-icons">more_vert</i>
-                                    </a>
-                                </li>
-                            </ul>
-                            <div class="card-panel chat">
-                                <div class="messages-container">
-                                    <div class="message-wrapper them">
-                                        <div class="circle-wrapper">
-                                            <img src="assets/images/yuna.jpg" class="circle z-depth-1" alt=""></div>
-                                        <div class="text-wrapper lime lighten-1">Lorem Ipsum</div>
-                                    </div>
-                                    <span class="timestamp-them">3hrs ago <i class="material-icons ts">done_all</i></span>
-                                    <div class="message-wrapper me">
-                                        <div class="circle-wrapper">
-                                            <img src="assets/images/profile.png" class="circle z-depth-1" alt=""></div>
-                                        <div class="text-wrapper">Integer in faucibus diam?</div>
-                                    </div>
-                                    <span class="timestamp-me">3hrs ago <i class="material-icons ts">done_all</i></span>
-                                    <div class="message-wrapper them">
-                                        <div class="circle-wrapper">
-                                            <img src="assets/images/yuna.jpg" class="circle z-depth-1" alt=""></div>
-                                        <div class="text-wrapper lime lighten-1">Vivamus quis neque volutpat, hendrerit justo vitae, suscipit dui</div>
-                                    </div>
-                                    <span class="timestamp-them">3hrs ago <i class="material-icons ts">done_all</i></span>
-                                    <div class="message-wrapper me">
-                                        <div class="circle-wrapper">
-                                            <img src="assets/images/profile.png" class="circle z-depth-1" alt=""></div>
-                                        <div class="text-wrapper">Suspendisse condimentum tortor et lorem pretium</div>
-                                    </div>
-                                    <span class="timestamp-me">3hrs ago <i class="material-icons ts">done_all</i></span>
-                                    <div class="message-wrapper them">
-                                        <div class="circle-wrapper">
-                                            <img src="assets/images/yuna.jpg" class="circle z-depth-1" alt=""></div>
-                                        <div class="text-wrapper lime lighten-1">dolore eu fugiat nulla pariatur</div>
-                                    </div>
-                                    <span class="timestamp-them">3hrs ago <i class="material-icons ts">done_all</i></span>
-                                    <div class="message-wrapper me">
-                                        <div class="circle-wrapper">
-                                            <img src="assets/images/profile.png" class="circle z-depth-1" alt=""></div>
-                                        <div class="text-wrapper">Duis maximus leo eget massa porta</div>
-                                    </div>
-                                    <span class="timestamp-me">3hrs ago <i class="material-icons ts">done_all</i></span>
-                                    <div class="message-wrapper them">
-                                        <div class="circle-wrapper">
-                                            <img src="assets/images/yuna.jpg" class="circle z-depth-1" alt=""></div>
-                                        <div class="text-wrapper lime lighten-1"><i class="material-icons left">phone_android</i>typing...</div>
+                        <!-- Modal Structure -->
+                        <div id="modal1" class="modal modal-fixed-footer">
+                            <div class="modal-content">
+                                <div id="converse" class="row">
+                                    <ul class="collection">
+                                        <li class="collection-item avatar">
+                                            <img src="assets/images/yuna.jpg" alt="" class="circle z-depth-1 online">
+                                            <span class="title">Rita Johns</span>
+                                            <p class="light-text grey-text">Online</p>
+                                            <a href="#!" class="secondary-content grey-text">
+                                                <i class="material-icons">more_vert</i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="card-panel chat">
+                                        <div class="messages-container">
+                                            <div class="message-wrapper them">
+                                                <div class="circle-wrapper">
+                                                    <img src="assets/images/yuna.jpg" class="circle z-depth-1" alt=""></div>
+                                                <div class="text-wrapper lime lighten-1">Lorem Ipsum</div>
+                                            </div>
+                                            <span class="timestamp-them">3hrs ago <i class="material-icons ts">done_all</i></span>
+                                            <div class="message-wrapper me">
+                                                <div class="circle-wrapper">
+                                                    <img src="assets/images/profile.png" class="circle z-depth-1" alt=""></div>
+                                                <div class="text-wrapper">Integer in faucibus diam?</div>
+                                            </div>
+                                            <span class="timestamp-me">3hrs ago <i class="material-icons ts">done_all</i></span>
+                                            <div class="message-wrapper them">
+                                                <div class="circle-wrapper">
+                                                    <img src="assets/images/yuna.jpg" class="circle z-depth-1" alt=""></div>
+                                                <div class="text-wrapper lime lighten-1">Vivamus quis neque volutpat, hendrerit justo vitae, suscipit dui</div>
+                                            </div>
+                                            <span class="timestamp-them">3hrs ago <i class="material-icons ts">done_all</i></span>
+                                            <div class="message-wrapper me">
+                                                <div class="circle-wrapper">
+                                                    <img src="assets/images/profile.png" class="circle z-depth-1" alt=""></div>
+                                                <div class="text-wrapper">Suspendisse condimentum tortor et lorem pretium</div>
+                                            </div>
+                                            <span class="timestamp-me">3hrs ago <i class="material-icons ts">done_all</i></span>
+                                            <div class="message-wrapper them">
+                                                <div class="circle-wrapper">
+                                                    <img src="assets/images/yuna.jpg" class="circle z-depth-1" alt=""></div>
+                                                <div class="text-wrapper lime lighten-1">dolore eu fugiat nulla pariatur</div>
+                                            </div>
+                                            <span class="timestamp-them">3hrs ago <i class="material-icons ts">done_all</i></span>
+                                            <div class="message-wrapper me">
+                                                <div class="circle-wrapper">
+                                                    <img src="assets/images/profile.png" class="circle z-depth-1" alt=""></div>
+                                                <div class="text-wrapper">Duis maximus leo eget massa porta</div>
+                                            </div>
+                                            <span class="timestamp-me">3hrs ago <i class="material-icons ts">done_all</i></span>
+                                            <div class="message-wrapper them">
+                                                <div class="circle-wrapper">
+                                                    <img src="assets/images/yuna.jpg" class="circle z-depth-1" alt=""></div>
+                                                <div class="text-wrapper lime lighten-1"><i class="material-icons left">phone_android</i>typing...</div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-panel sticky">
-                                <div class="row">
-                                    <div class="input-field col s10">
-                                        <input id="write" type="text" class="validate">
-                                        <label for="write">Write</label>
-                                    </div>
-                                    <div class="col s2">
-                                      <a class="btn-floating waves-effect lime"><i class="material-icons">send</i></a>
-                                    </div>
-                                </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
                             </div>
                         </div>
 
-                        <div id="converse-group" class="row" style="display:none">
-                            <ul class="collection">
-                                <li class="collection-item avatar">
-                                    <img src="assets/images/groupchat.png" alt="" class="circle z-depth-1">
-                                    <span class="title">TheGroup!</span>
-                                    <p class="light-text grey-text">Hello.., I will be visting you tomorrow!</p>
-                                    <a href="#!" class="secondary-content grey-text">
-                                        <i class="material-icons">more_vert</i>
-                                    </a>
-                                </li>
-                                <div class="msg-group white">
-                                    <img class="circle follow_img_stack hvr-backward" src="assets/images/profile.png" width="35">
-                                    <img class="circle follow_img_stack hvr-backward" src="assets/images/yuna.jpg" width="35">
-                                    <img class="circle follow_img_stack hvr-backward" src="assets/images/profile2.png" width="35">
-                                    <img class="circle follow_img_stack hvr-backward" src="assets/images/1.jpg" width="35">
-                                    <img class="circle follow_img_stack hvr-backward" src="assets/images/2.jpg" width="35">
-                                    <img class="circle follow_img_stack hvr-backward" src="assets/images/3.jpg" width="35">
-                                    <img class="circle follow_img_stack hvr-backward" src="assets/images/4.jpg" width="35">
-                                    <img class="circle follow_img_stack hvr-backward" src="assets/images/5.jpg" width="35">
-                                    <span class="label lime hvr-wobble-horizontal">+ 7</span>
-                                </div>
-                            </ul>
-                            <div class="card-panel chat">
-                                <div class="messages-container">
-                                    <div class="message-wrapper them">
-                                        <div class="circle-wrapper">
-                                            <img src="assets/images/yuna.jpg" class="circle z-depth-1" alt=""></div>
-                                        <div class="text-wrapper lime lighten-1">Lorem Ipsum</div>
-                                    </div>
-                                    <span class="timestamp-them">3hrs ago <i class="material-icons ts">done_all</i></span>
-                                    <div class="message-wrapper me">
-                                        <div class="circle-wrapper">
-                                            <img src="assets/images/profile.png" class="circle z-depth-1" alt=""></div>
-                                        <div class="text-wrapper">Integer in faucibus diam?</div>
-                                    </div>
-                                    <span class="timestamp-me">3hrs ago <i class="material-icons ts">done_all</i></span>
-                                    <div class="message-wrapper them">
-                                        <div class="circle-wrapper">
-                                            <img src="assets/images/1.jpg" class="circle z-depth-1" alt=""></div>
-                                        <div class="text-wrapper lime lighten-1">Vivamus quis neque volutpat, hendrerit justo vitae, suscipit dui</div>
-                                    </div>
-                                    <span class="timestamp-them">3hrs ago <i class="material-icons ts">done_all</i></span>
-                                    <div class="message-wrapper me">
-                                        <div class="circle-wrapper">
-                                            <img src="assets/images/profile.png" class="circle z-depth-1" alt=""></div>
-                                        <div class="text-wrapper">Suspendisse condimentum tortor et lorem pretium</div>
-                                    </div>
-                                    <span class="timestamp-me">3hrs ago <i class="material-icons ts">done_all</i></span>
-                                    <div class="message-wrapper them">
-                                        <div class="circle-wrapper">
-                                            <img src="assets/images/2.jpg" class="circle z-depth-1" alt=""></div>
-                                        <div class="text-wrapper lime lighten-1">dolore eu fugiat nulla pariatur</div>
-                                    </div>
-                                    <span class="timestamp-them">3hrs ago <i class="material-icons ts">done_all</i></span>
-                                    <div class="message-wrapper me">
-                                        <div class="circle-wrapper">
-                                            <img src="assets/images/profile.png" class="circle z-depth-1" alt=""></div>
-                                        <div class="text-wrapper">Duis maximus leo eget massa porta</div>
-                                    </div>
-                                    <span class="timestamp-me">3hrs ago <i class="material-icons ts">done_all</i></span>
-                                    <div class="message-wrapper them">
-                                        <div class="circle-wrapper">
-                                            <img src="assets/images/3.jpg" class="circle z-depth-1" alt=""></div>
-                                        <div class="text-wrapper lime lighten-1"><i class="material-icons left">phone_android</i>typing...</div>
-                                    </div>
-                                </div>
+                        <!-- Modal Structure -->
+                        <div id="modal2" class="modal modal-fixed-footer">
+                            <div class="modal-content">
+                              <div id="converse-group" class="row">
+                                  <ul class="collection">
+                                      <li class="collection-item avatar">
+                                          <img src="assets/images/groupchat.png" alt="" class="circle z-depth-1">
+                                          <span class="title">TheGroup!</span>
+                                          <p class="light-text grey-text">Hello.., I will be visting you tomorrow!</p>
+                                          <a href="#!" class="secondary-content grey-text">
+                                              <i class="material-icons">more_vert</i>
+                                          </a>
+                                      </li>
+                                      <div class="msg-group white">
+                                          <img class="circle follow_img_stack hvr-backward" src="assets/images/profile.png" width="35">
+                                          <img class="circle follow_img_stack hvr-backward" src="assets/images/yuna.jpg" width="35">
+                                          <img class="circle follow_img_stack hvr-backward" src="assets/images/profile2.png" width="35">
+                                          <img class="circle follow_img_stack hvr-backward" src="assets/images/1.jpg" width="35">
+                                          <img class="circle follow_img_stack hvr-backward" src="assets/images/2.jpg" width="35">
+                                          <img class="circle follow_img_stack hvr-backward" src="assets/images/3.jpg" width="35">
+                                          <img class="circle follow_img_stack hvr-backward" src="assets/images/4.jpg" width="35">
+                                          <img class="circle follow_img_stack hvr-backward" src="assets/images/5.jpg" width="35">
+                                          <span class="label lime hvr-wobble-horizontal">+ 7</span>
+                                      </div>
+                                  </ul>
+                                  <div class="card-panel chat">
+                                      <div class="messages-container">
+                                          <div class="message-wrapper them">
+                                              <div class="circle-wrapper">
+                                                  <img src="assets/images/yuna.jpg" class="circle z-depth-1" alt=""></div>
+                                              <div class="text-wrapper lime lighten-1">Lorem Ipsum</div>
+                                          </div>
+                                          <span class="timestamp-them">3hrs ago <i class="material-icons ts">done_all</i></span>
+                                          <div class="message-wrapper me">
+                                              <div class="circle-wrapper">
+                                                  <img src="assets/images/profile.png" class="circle z-depth-1" alt=""></div>
+                                              <div class="text-wrapper">Integer in faucibus diam?</div>
+                                          </div>
+                                          <span class="timestamp-me">3hrs ago <i class="material-icons ts">done_all</i></span>
+                                          <div class="message-wrapper them">
+                                              <div class="circle-wrapper">
+                                                  <img src="assets/images/1.jpg" class="circle z-depth-1" alt=""></div>
+                                              <div class="text-wrapper lime lighten-1">Vivamus quis neque volutpat, hendrerit justo vitae, suscipit dui</div>
+                                          </div>
+                                          <span class="timestamp-them">3hrs ago <i class="material-icons ts">done_all</i></span>
+                                          <div class="message-wrapper me">
+                                              <div class="circle-wrapper">
+                                                  <img src="assets/images/profile.png" class="circle z-depth-1" alt=""></div>
+                                              <div class="text-wrapper">Suspendisse condimentum tortor et lorem pretium</div>
+                                          </div>
+                                          <span class="timestamp-me">3hrs ago <i class="material-icons ts">done_all</i></span>
+                                          <div class="message-wrapper them">
+                                              <div class="circle-wrapper">
+                                                  <img src="assets/images/2.jpg" class="circle z-depth-1" alt=""></div>
+                                              <div class="text-wrapper lime lighten-1">dolore eu fugiat nulla pariatur</div>
+                                          </div>
+                                          <span class="timestamp-them">3hrs ago <i class="material-icons ts">done_all</i></span>
+                                          <div class="message-wrapper me">
+                                              <div class="circle-wrapper">
+                                                  <img src="assets/images/profile.png" class="circle z-depth-1" alt=""></div>
+                                              <div class="text-wrapper">Duis maximus leo eget massa porta</div>
+                                          </div>
+                                          <span class="timestamp-me">3hrs ago <i class="material-icons ts">done_all</i></span>
+                                          <div class="message-wrapper them">
+                                              <div class="circle-wrapper">
+                                                  <img src="assets/images/3.jpg" class="circle z-depth-1" alt=""></div>
+                                              <div class="text-wrapper lime lighten-1"><i class="material-icons left">phone_android</i>typing...</div>
+                                          </div>
+                                      </div>
 
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
                             </div>
                         </div>
+
                     </div>
                     <!--main cards col ends-->
 

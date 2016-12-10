@@ -23,27 +23,17 @@ $(document).ready(function() {
         theme: 'tooltipster-borderless',
         side: 'left'
     });
-    //Conversation
-    $('#converse1').click(function() {
-        var device = getDeviceType();
-        if (device != '') {
-            $('#ctrl_bar').slideUp();
-            $('#converse').fadeIn();
-        } else {
-            console.log('Desktop');
-            $('#converse').fadeIn();
-        }
+    
+    //Chat Modal
+    $('.modal').modal({
+        dismissible: true, // Modal can be dismissed by clicking outside of the modal
+        opacity: .5, // Opacity of modal background
+        in_duration: 300, // Transition in duration
+        out_duration: 200, // Transition out duration
+        starting_top: '4%', // Starting top style attribute
+        ending_top: '10%', // Ending top style attribute
     });
-    $('#group1').click(function() {
-        var device = getDeviceType();
-        if (device != '') {
-            $('#ctrl_bar').slideUp();
-            $('#converse-group').fadeIn();
-        } else {
-            console.log('Desktop');
-            $('#converse-group').fadeIn();
-        }
-    });
+
     //Function to detect mobile
     function getDeviceType() {
         if (navigator.userAgent.match(/Android/i)) {
