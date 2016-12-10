@@ -1259,11 +1259,11 @@ div.card>div.card-content>div>img.left-marg {
 }
 
 @media only screen and (max-width: 600px) {
-    div.col.s12.m4.l-r-no-pad {
+    div.col.s12.m8.l-r-no-pad {
         padding-left: 0px;
         padding-right: 0px;
     }
-    div.col.s12.m7.l-r-no-pad {
+    div.col.s12.m8.l-r-no-pad {
         padding-left: 0px;
         padding-right: 0px;
     }
