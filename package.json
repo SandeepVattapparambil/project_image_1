@@ -15,9 +15,9 @@
   "license": "ISC",
   "dependencies": {
     "hover.css": "^2.0.2",
-    "mdi": "^1.7.22",
+    "mdi": "^2.2.43",
     "nprogress": "^0.2.0",
-    "roboto-fontface": "^0.6.0",
+    "roboto-fontface": "^0.9.0",
     "simplebar": "^2.0.0-beta.3",
     "tooltipster": "^4.1.6"
   }
